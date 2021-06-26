@@ -1,0 +1,126 @@
+<!-- Body Inner -->
+<div class="body-inner">
+    <!-- Header -->
+    <!-- Header -->
+    <header id="header" data-fullwidth="true">
+        <div class="header-inner">
+            <div class="container">
+                <!--Logo-->
+                <div id="logo">
+                    <a routerLink="/home">
+                        <img src="assets/images/logo.png" class="logo-default">
+                    </a>
+                </div>
+                <!--End: Logo-->
+                <!--Header Extras-->
+                <app-language></app-language>
+                <!--end: Header Extras-->
+                <!--Navigation Resposnive Trigger-->
+                <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
+                <!--end: Navigation Resposnive Trigger-->
+                <!--Navigation-->
+                <app-menu></app-menu>
+                <!--end: Navigation-->
+            </div>
+        </div>
+    </header>
+    <!-- end: Header -->
+    <!-- end: Header -->
+    <!-- Page title -->
+    <div id="slider" class="inspiro-slider dots-creative" data-height-xs="360">
+        <!-- Slide 2 -->
+        <div class="slide kenburns" style="background-image:url('assets/images/service/service.svg');">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="slide-captions text-center text-light">
+                    <!-- Captions -->
+                    <span class="strong">{{ 'service.what_we_do'|translate }}</span>
+                    <h1>{{ 'service.title'|translate }}</h1>
+                    <!-- end: Captions -->
+                </div>
+            </div>
+        </div>
+        <!-- end: Slide 2 -->
+
+    </div>
+    <!-- end: Page title -->
+    <section>
+        <div class="container">
+            <div class="heading-text heading-section text-center">
+                <h2>{{ 'service.what_we_do'|translate }}</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="icon-box effect medium border center">
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-users"></i></a>
+                        </div>
+                        <h3>{{ 'service.service01'|translate }}</h3>
+                        <p>{{ 'service.service01_desc'|translate }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="icon-box effect medium border center">
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                        <h3>{{ 'service.service02'|translate }}</h3>
+                        <p>{{ 'service.service02_desc'|translate }}</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="icon-box effect medium border center">
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-arrow-up"></i></a>
+                        </div>
+                        <h3>{{ 'service.service03'|translate }} </h3>
+                        <p>{{ 'service.service03_desc'|translate }} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="background-grey">
+        <div class="container">
+            <div class="row carousel-description-clients carousel-description-style ">
+                <div class="col-lg-4">
+                    <div class="description">
+                        <h2>{{ 'partner.title'|translate }}</h2> 
+                        {{ 'partner.trust'|translate }}
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="carousel client-logos" data-items="4">
+                        <div>
+                            <a href="#"><img alt="" src="assets/images/clients/1.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"><img alt="" src="assets/images/clients/2.png">
+                            </a>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="call-to-action background-image p-t-100 p-b-100" style="background-image:url(assets/images/parallax/5f72542386b9f.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="text-light">{{ 'service.promotion'|translate }}</h3>
+                    <p class="text-light">{{ 'service.promotion_explain'|translate }}.</p>
+                </div>
+                <div class="col-lg-2"> <a routerLink="/contact" class="btn btn-light btn-outline">{{ 'service.contact_us'|translate }}</a> </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <app-footer></app-footer>
+    <!-- end: Footer -->
+</div> <!-- end: Body Inner -->
+<!-- Scroll top -->
+<app-scroll-top></app-scroll-top>
