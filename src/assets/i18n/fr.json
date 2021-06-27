@@ -62,8 +62,15 @@
     },
 
     "home" :{
-        "s01_t":"FORMATIONS AUX MÉTIERS DE L'AVIATION CIVILE ",
-        "s01_d":"Réalise ton rêve",
+        "s01_t":"DEVENIR UN PILOTE DE LIGNE",
+        "s01_d":"Cela est désormais possible grâce à notre partenaire Collège Air Richelieu",
+        "s01_l":"Parcous",
+        "s02_t":"INSTITUT AGRÉE PAR L'AUTORITÉ AÉRONAUTIQUE",
+        "s02_d":"Plus de 10 formations",
+        "s02_l":"Formations",
+        "s03_t":"UNE DOCUMENTATION DE QUALITÉ",
+        "s03_d":"Tous les grands ouvrages du monde de l'aéronautique",
+        "s03_l":"Rendez-vous",
         "a_t":"A propos de nous",
         "a_d":"IRDSM AVIATION est un centre de formation privé dans le but d'offrir des formations dans certains metiers de l'aviation civile. Ces formations sont accrodées par la CCAA et aussi par IATA",
         "start":"Débutez l'aventure avec nous",
@@ -82,6 +89,8 @@
     "formation": {
         "title": "Formations",
         "duree": "Durée Formation",
+        "atpl"  : "Licence de pilote de ligne",
+        "atpl_desc" : "La licence de pilote de ligne, abrégée en ATPL, est la licence européenne de pilotage d'avion – ATPL, ou d'hélicoptère – ATPL, de plus haut niveau. Elle est indispensable à l'exercice de Commandant de bord d'un avion certifié CS-25 en transport public.",
         "ato": "Agent Technique D'exploitation",
         "ato_desc": "Chargé de la préparation et de la planification des vols, du traitement des passagers et du fret, de l’assistance en escale, du planning des équipages… Le métier de l’Agent Technique d’Exploitation (ATE) est riche d’intérêt et possède de multiples facettes.",
         "md": "Marchandise Dangereuse",
@@ -116,6 +125,11 @@
 
     "news" : {
         "title" : "News"
+    },
+
+    "pilote" : {
+        "programme" : "Programmes",
+        "title": "Licence de pilote de ligne"
     }
 
 

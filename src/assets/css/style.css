@@ -1266,8 +1266,9 @@ Topbar
 #header #header-wrap #logo a > img {
   vertical-align: inherit;
   transition: all .4s ease-in-out;
-  height: 70px;
-  width: auto;
+  height: 50px;
+  width: 240px;
+  margin-top: 15px;
 }
 #header .header-inner #logo a > img,
 #header .header-inner #logo a [class*="logo-"],

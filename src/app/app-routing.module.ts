@@ -6,11 +6,13 @@ import { FormationsComponent } from './pages/formations/formations.component';
 import { FourOhFourComponent } from './pages/four-oh-four/four-oh-four.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NewsletterComponent } from './pages/newsletter/newsletter.component';
+import { PiloteComponent } from './pages/pilote/pilote.component';
 import { ServicesComponent } from './pages/services/services.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'news', component: NewsletterComponent },
+  { path: 'program-pilote', component: PiloteComponent },
   { path: 'formation', component: FormationsComponent  },
   { path: 'about', component: AboutComponent  },
   { path: 'service', component: ServicesComponent },

@@ -2,13 +2,15 @@
 <div class="body-inner">
 
     <!-- Header -->
-    <header id="header" data-fullwidth="true">
+    <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
         <div class="header-inner">
             <div class="container">
                 <!--Logo-->
                 <div id="logo">
                     <a routerLink="/home">
                         <img src="assets/images/logo.png" class="logo-default">
+                        <img src="assets/images/logo.png" class="logo-dark">
+
                     </a>
                 </div>
                 <!--End: Logo-->
@@ -30,14 +32,42 @@
     <!-- Inspiro Slider -->
     <div id="slider" class="inspiro-slider slider-fullscreen dots-creative" data-fade="true">
         <!-- Slide 1 -->
-        <div class="slide kenburns" data-bg-image="assets/images/formations/bg.jpg">
+        <div class="slide kenburns" data-bg-image="assets/images/home/bg.jpg">
             <div class="bg-overlay"></div>
             <div class="container">
                 <div class="slide-captions text-center text-light">
                     <!-- Captions -->
                     <h2>{{ 'home.s01_t'|translate }}</h2>
                     <p>{{ 'home.s01_d'|translate }}</p>
-                    <div><a routerLink="/formation" class="btn scroll-to">{{ 'formation.title'|translate }}</a></div>
+                    <div><a routerLink="/program-pilote" class="btn scroll-to">{{ 'home.s01_l'|translate }}</a></div>
+
+                    <!-- end: Captions -->
+                </div>
+            </div>
+        </div>
+
+        <div class="slide kenburns" data-bg-image="assets/images/home/campus.jpg">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="slide-captions text-center text-light">
+                    <!-- Captions -->
+                    <h2>{{ 'home.s02_t'|translate }}</h2>
+                    <p>{{ 'home.s02_d'|translate }}</p>
+                    <div><a routerLink="/formation" class="btn scroll-to">{{ 'home.s02_l'|translate }}</a></div>
+
+                    <!-- end: Captions -->
+                </div>
+            </div>
+        </div>
+
+        <div class="slide kenburns" data-bg-image="assets/images/home/books.jpg">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="slide-captions text-center text-light">
+                    <!-- Captions -->
+                    <h2>{{ 'home.s03_t'|translate }}</h2>
+                    <p>{{ 'home.s03_d'|translate }}</p>
+                    <div><a routerLink="/formation" class="btn scroll-to">{{ 'home.s03_l'|translate }}</a></div>
 
                     <!-- end: Captions -->
                 </div>

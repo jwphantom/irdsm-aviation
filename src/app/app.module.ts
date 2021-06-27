@@ -25,6 +25,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { LocaleService } from './services/locale.service';
 import { FormationsComponent } from './pages/formations/formations.component';
 import { NewsletterComponent } from './pages/newsletter/newsletter.component';
+import { PiloteComponent } from './pages/pilote/pilote.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { NewsletterComponent } from './pages/newsletter/newsletter.component';
     ScrollTopComponent,
     FormationsComponent,
     NewsletterComponent,
+    PiloteComponent,
   ],
   imports: [
     BrowserModule,

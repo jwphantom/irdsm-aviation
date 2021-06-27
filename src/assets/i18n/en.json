@@ -114,8 +114,13 @@
 
     "news" : {
         "title" : "News"
-    }
+    },
 
+
+    "pilote" : {
+        "programme" : "Programmes",
+        "title": "Licence de pilote de ligne"
+    }
 
 
     
