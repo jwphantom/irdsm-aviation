@@ -64,7 +64,7 @@
     "home" :{
         "s01_t":"DEVENIR UN PILOTE DE LIGNE",
         "s01_d":"Cela est désormais possible grâce à notre partenaire Collège Air Richelieu",
-        "s01_l":"Parcous",
+        "s01_l":"Parcours",
         "s02_t":"INSTITUT AGRÉE PAR L'AUTORITÉ AÉRONAUTIQUE",
         "s02_d":"Plus de 10 formations",
         "s02_l":"Formations",
@@ -129,7 +129,45 @@
 
     "pilote" : {
         "programme" : "Programmes",
-        "title": "Licence de pilote de ligne"
+        "title": "Licence de pilote de ligne",
+        "condition" : "Condition d’admission",
+        "licence" : "Licences & Qualifications",
+        "rdv" : "Prendre Rendez-vous",
+        "place_formation" : "Ces formations de pilote de ligne se déroulent au sein du Collège AirRichelieu situé au Canada dans la Ville de Longueuil",
+        "programme1" : {
+            "title": "Diplôme d'études collégiales en Techniques de pilotage d’aéronefs ATPL intégré (Collège Air Richelieu)",
+            "condition" : "Avoir réussi les cours de mathématiques (TS ou SN) et de physique du 5ᵉ secondaire ou équivalent",
+            "licence1": "Licence de pilote privé PPL",
+            "licence2": "Licence de pilote professionnel CPL",
+            "licence3": "Qualification vol aux instruments IR / Annotation multi moteurs ME",
+            "licence4": "Formation au travail en équipage MCC (Multi Crew coordination)",
+            "licence5": "Licence de pilote de ligne (SARON et SAMRA) (FROZEN ATPL)",
+            "etape1": "860H de cours techniques",
+            "etape2": "85H de vol",
+            "etape3": "80H de simulateur",
+            "etape4": "660H de cours généraux",
+            "etape5": "24 à 40 mois",
+            "diplome" : "Diplôme et immigration",
+            "diplome_desc" : "Diplôme délivré par le ministère de l’Enseignement supérieur du Québec, et donnant accès à un permis de travail post diplôme d’une durée de vos études ainsi qu’au programme du CSQ (certificat de sélection du Québec) pour l’obtention de la résidence permanente."
+        },
+
+        "programme2" : {
+            "title": "Attestation d'études collégiales de pilote de ligne ATPL intégré (Collège Air Richelieu)",
+            "condition" : "Avoir obtenu un diplôme d’études secondaires Baccalaureat ou équivalent.",
+            "licence1": "Licence de pilote privé PPL",
+            "licence2": "Licence de pilote professionnel CPL",
+            "licence3": "Qualification vol aux instruments IR / Annotation multi moteurs ME",
+            "licence4": "Formation au travail en équipage MCC (Multi Crew coordination)",
+            "licence5": "Licence de pilote de ligne (SARON et SAMRA) (FROZEN ATPL)",
+            "etape1": "1320H de cours techniques",
+            "etape2": "185H de vol",
+            "etape3": "80H de simulateur",
+            "etape4": "Bilingue Anglais & Français",
+            "etape5": "24 à 26 mois",
+            "diplome" : "Diplôme et immigration",
+            "diplome_desc" : "Attestation d’études collégiales délivrée par le Collège Air Richelieu et reconnue par le ministère de l’Enseignement supérieur du Québec, et donnant accès à un permis de travail post diplôme d’une durée de vos études."
+        }
+
     }
 
 
