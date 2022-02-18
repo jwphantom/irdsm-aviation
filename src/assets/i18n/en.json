@@ -53,15 +53,15 @@
         "desc": "Ideas, recommendations, observations, complaints, etc.? Please leave us a message with as much detail as possible."
     },
     "home": {
-        "s01_t":"BECOMING AN AIRLINE PILOT",
-        "s01_d":"This is now possible thanks to our partner Collège Air Richelieu",
-        "s01_l":"Course",
-        "s02_t":"INSTITUTE APPROVED BY THE AERONAUTICAL AUTHORITY",
-        "s02_d":"More than 10 courses",
-        "s02_l":"Training",
-        "s03_t":"QUALITY DOCUMENTATION",
-        "s03_d":"All the major works in the world of aeronautics",
-        "s03_l":"Making appointments",
+        "s01_t": "BECOMING AN AIRLINE PILOT",
+        "s01_d": "This is now possible thanks to our partner Collège Air Richelieu",
+        "s01_l": "Course",
+        "s02_t": "INSTITUTE APPROVED BY THE AERONAUTICAL AUTHORITY",
+        "s02_d": "More than 10 courses",
+        "s02_l": "Training",
+        "s03_t": "QUALITY DOCUMENTATION",
+        "s03_d": "All the major works in the world of aeronautics",
+        "s03_l": "Making appointments",
         "a_t": "About Us",
         "a_d": "IRDSM AVIATION is a private training center with the aim of offering training in certain fields of civil aviation. These trainings are accredited by the CCAA and also by IATA.",
         "start": "Start the adventure with us",
@@ -117,8 +117,8 @@
         "title": "Airline Transport Pilot Licence",
         "condition": "Admission requirements",
         "licence": "Licences & Qualifications",
-        "rdv" : "Make an appointment",
-        "place_formation" : "These airline pilot training courses take place at the AirRichelieu College located in Canada in the city of Longueuil",
+        "rdv": "Make an appointment",
+        "place_formation": "These airline pilot training courses take place at the AirRichelieu College located in Canada in the city of Longueuil",
         "programme1": {
             "title": "Diploma of Collegial Studies in Integrated ATPL Aircraft Piloting Techniques (Air Richelieu College)",
             "condition": "Successful completion of secondary 5ᵉ mathematics (TS or SN) and physics or equivalent.",
@@ -132,13 +132,12 @@
             "etape3": "80H simulator",
             "etape4": "660H of general courses",
             "etape5": "24 to 40 months",
-            "diplome" : "Diploma and immigration",
-            "diplome_desc" : "Diploma issued by the Ministry of Higher Education of Quebec, and giving access to a post-graduation work permit for the duration of your studies as well as to the CSQ (Certificat de sélection du Québec) program for obtaining permanent residence."
+            "diplome": "Diploma and immigration",
+            "diplome_desc": "Diploma issued by the Ministry of Higher Education of Quebec, and giving access to a post-graduation work permit for the duration of your studies as well as to the CSQ (Certificat de sélection du Québec) program for obtaining permanent residence."
         },
-
-        "programme2" : {
+        "programme2": {
             "title": "Attestation of Collegial Studies as an Airline Transport Pilot (Air Richelieu College)",
-            "condition" : "Have obtained a high school diploma Baccalaureat or equivalent.",
+            "condition": "Have obtained a high school diploma Baccalaureat or equivalent.",
             "licence1": "Private Pilot Licence PPL",
             "licence2": "Commercial Pilot Licence CPL",
             "licence3": "IR instrument rating / ME multi-engine annotation",
@@ -149,9 +148,28 @@
             "etape3": "80H simulator",
             "etape4": "Bilingual English & French",
             "etape5": "24 to 26 months",
-            "diplome" : "Diploma and immigration",
-            "diplome_desc" : "Attestation of collegial studies issued by the Air Richelieu College and recognized by the Ministry of Higher Education of Quebec, and giving access to a post-graduation work permit for the duration of your studies."
+            "diplome": "Diploma and immigration",
+            "diplome_desc": "Attestation of collegial studies issued by the Air Richelieu College and recognized by the Ministry of Higher Education of Quebec, and giving access to a post-graduation work permit for the duration of your studies."
         }
-
+    },
+    "admission": {
+        "title": "Admission",
+        "begin": "Let's start your procedure",
+        "select_prog": "Choice of programme",
+        "re-entry": "Date of Competition",
+        "personal_info": "Personal Information",
+        "fullname": "Full Name",
+        "email": "Email",
+        "phone": "Phone",
+        "sexe": "Sexe",
+        "age": "Age",
+        "etude": "Studies",
+        "diplome": "Recent diplomas",
+        "choice_center": "Choice of centre",
+        "center": "Centre",
+        "confirm_admission": "I certify that the information provided is accurate",
+        "prev": "Pevious",
+        "next": "Next",
+        "submit": "Validate"
     }
 }

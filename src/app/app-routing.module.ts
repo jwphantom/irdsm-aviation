@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AdmissionComponent } from './pages/formations/admission/admission.component';
 import { FormationsComponent } from './pages/formations/formations.component';
 import { FourOhFourComponent } from './pages/four-oh-four/four-oh-four.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'news', component: NewsletterComponent },
   { path: 'program-pilote', component: PiloteComponent },
   { path: 'formation', component: FormationsComponent  },
+  { path: 'admission', component: AdmissionComponent  },
   { path: 'about', component: AboutComponent  },
   { path: 'service', component: ServicesComponent },
   { path: 'contact', component: ContactComponent },

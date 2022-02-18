@@ -16,7 +16,7 @@ import { MenuComponent } from './static/menu/menu.component';
 import { ScrollTopComponent } from './static/scroll-top/scroll-top.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
@@ -26,6 +26,7 @@ import { LocaleService } from './services/locale.service';
 import { FormationsComponent } from './pages/formations/formations.component';
 import { NewsletterComponent } from './pages/newsletter/newsletter.component';
 import { PiloteComponent } from './pages/pilote/pilote.component';
+import { AdmissionComponent } from './pages/formations/admission/admission.component';
 
 @NgModule({
   declarations: [
@@ -44,11 +45,15 @@ import { PiloteComponent } from './pages/pilote/pilote.component';
     FormationsComponent,
     NewsletterComponent,
     PiloteComponent,
+    AdmissionComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

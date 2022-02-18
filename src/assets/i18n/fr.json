@@ -168,9 +168,26 @@
             "diplome_desc" : "Attestation d’études collégiales délivrée par le Collège Air Richelieu et reconnue par le ministère de l’Enseignement supérieur du Québec, et donnant accès à un permis de travail post diplôme d’une durée de vos études."
         }
 
+    },
+    "admission": {
+        "title": "Admission",
+        "begin": "Commencons votre procédure",
+        "select_prog" : "Choix de programme",
+        "re-entry": "Date du concours",
+        "personal_info": "Informations personnelles",
+        "fullname": "Nom Complet",
+        "email" : "Email",
+        "phone": "Téléphone",
+        "sexe": "Sexe",
+        "age" : "Age",
+        "etude": "Etudes",
+        "diplome": "Diplômes récents",
+        "choice_center" : "Choix du centre",
+        "center": "Centre",
+        "confirm_admission" : "Je certifie que les informations renseignées sont exactes",
+        "prev": "Précedent",
+        "next": "Suivant",
+        "submit" : "Valider"
     }
-
-
-
 
 }

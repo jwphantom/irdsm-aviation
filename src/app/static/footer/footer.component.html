@@ -22,7 +22,7 @@
                         </div>
                         <h3>{{ 'footer.location' | translate }}</h3>
                         <p><strong>{{ 'footer.adresse' | translate }}:</strong>
-                            <br> Cameroun, Yaoundé, Mballa2, Entrée Jamot, 1ère entrée à droite, Deuxième résidence
+                            <br> {{ localisation }}
                             <br>
                             <br>
                         </p>
@@ -35,11 +35,11 @@
                         </div>
                         <h3>{{ 'footer.contact' | translate }}</h3>
                         <p><strong>{{ 'footer.contact' | translate }}:</strong>
-                            <br>(+237) 698 885 161
-                            <br>(+237) 673 908 319
+                            <br>{{ phone1 }}
+                            <br>{{ phone2 }}
                         </p>
                         <p><strong>{{ 'footer.mail' | translate }}:</strong>
-                            <br>campus@irdsm-aviation.com
+                            <br>{{ email }}
                             
                         </p>
                     </div>
@@ -49,7 +49,7 @@
     </div>
     <div class="copyright-content">
         <div class="container">
-            <div class="copyright-text text-center">&copy; 2021 IRDSM AVIATION - {{ 'footer.title' | translate }}. {{ 'footer.copyright' | translate }}</div>
+            <div class="copyright-text text-center">&copy; {{ year }} {{ appname }} - {{ 'footer.title' | translate }}. {{ 'footer.copyright' | translate }} - v {{ version }} </div>
         </div>
     </div>
 </footer>
