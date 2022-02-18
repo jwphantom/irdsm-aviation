@@ -1,6 +1,6 @@
 {
-  "name": "afrizon",
-  "version": "0.0.0",
+  "name": "IRDSM AVIATION",
+  "version": "1.1.0",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
