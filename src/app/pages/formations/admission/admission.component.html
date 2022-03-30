@@ -2,7 +2,8 @@
     <img src="assets/images/animations/Dual-Ball-1s-200px.svg" style="width: 60px; height:60px;">
 </div>
 
-<div id="flash_message_success" class="admission_success"><i class="fas fa-check"></i> Votre Admission a été envoyé</div>
+<div id="flash_message_success" class="admission_success"><i class="fas fa-check"></i> Votre Admission a été envoyé
+</div>
 
 
 <div class="body-inner">
@@ -59,21 +60,22 @@
     </section>
 
     <div id="form" class="container">
-        <form id="regForm" [formGroup]="admissionForm" (ngSubmit)="submitAdmission()" method="post" action=""autocomplete="off">
+        <form id="regForm" [formGroup]="admissionForm" (ngSubmit)="submitAdmission()" method="post" action=""
+            autocomplete="off">
             <!-- One "tab" for each step in the form: -->
             <div class="tab">
 
                 {{ 'admission.select_prog'|translate }}:
                 <p>
                     <select formControlName="program" id="monselect">
-                        <option *ngFor="let p of programs" value="{{p.code}}" value="valeur1">{{ p.name }} </option>
+                        <option *ngFor="let p of programs" value="{{p.name}}" value="valeur1">{{ p.name }} </option>
                     </select>
                 </p>
 
                 {{ 'admission.re-entry'|translate }}:
                 <p>
                     <select formControlName="concours" id="monselect">
-                        <option *ngFor="let d of dateComp" value="{{d.code}}" value="valeur1">{{ d.name }} </option>
+                        <option *ngFor="let d of dateComp" value="{{d.name}}" value="valeur1">{{ d.name }} </option>
                     </select>
                 </p>
 
@@ -82,13 +84,16 @@
             <div class="tab">
                 <h4>{{ 'admission.personal_info'|translate }} </h4>
                 {{ 'admission.fullname'|translate }}:
-                <p><input formControlName="fname" placeholder="{{ 'admission.fullname'|translate }}" oninput="this.className = ''" name="name"></p>
+                <p><input formControlName="fname" placeholder="{{ 'admission.fullname'|translate }}"
+                        oninput="this.className = ''" name="name"></p>
 
                 {{ 'admission.email'|translate }}:
-                <p><input formControlName="email" placeholder="{{ 'admission.email'|translate }}:" oninput="this.className = ''" name="email"></p>
+                <p><input formControlName="email" placeholder="{{ 'admission.email'|translate }}:"
+                        oninput="this.className = ''" name="email"></p>
 
                 {{ 'admission.phone'|translate }}:
-                <p><input formControlName="phone" placeholder="{{ 'admission.phone'|translate }}" oninput="this.className = ''" name="phone"></p>
+                <p><input formControlName="phone" placeholder="{{ 'admission.phone'|translate }}"
+                        oninput="this.className = ''" name="phone"></p>
 
                 {{ 'admission.sexe'|translate }}:
                 <p>
@@ -100,7 +105,8 @@
 
 
                 {{ 'admission.age'|translate }}:
-                <p><input formControlName="age" placeholder="{{ 'admission.age'|translate }}" oninput="this.className = ''" type="number" name="age"></p>
+                <p><input formControlName="age" placeholder="{{ 'admission.age'|translate }}"
+                        oninput="this.className = ''" type="number" name="age"></p>
 
 
             </div>
@@ -111,24 +117,26 @@
                 {{ 'admission.diplome'|translate }}:
                 <p>
                     <select formControlName="diplome" id="monselect">
-                        <option *ngFor="let n of nEtude" value="{{n.code}}" value="valeur1">{{ n.name }} </option>
+                        <option *ngFor="let n of nEtude" value="{{n.name}}" value="valeur1">{{ n.name }} </option>
                     </select>
                 </p>
 
             </div>
             <div class="tab">
                 <h4> {{ 'admission.choice_center'|translate }} </h4>
-                
+
                 {{ 'admission.center'|translate }}:
                 <p>
                     <select formControlName="center" id="monselect">
-                        <option *ngFor="let p of dateComp" value="M" value="yde">Yaoundé - Mballa 2 </option>
-                        <option *ngFor="let p of dateComp" value="F" value="dla">Douala - Immeuble Dekage </option>
+                        <option *ngFor="let p of dateComp" value="Yaoundé - Mballa 2">Yaoundé - Mballa 2 </option>
+                        <option *ngFor="let p of dateComp" value="Douala - Immeuble Dekage">Douala - Immeuble Dekage
+                        </option>
                     </select>
                 </p>
 
                 <p>
-                    <input  oninput="this.className = ''"  required formControlName="cF" type="checkbox" id="cF" name="vehicle1" value="true">
+                    <input oninput="this.className = ''" required formControlName="cF" type="checkbox" id="cF"
+                        name="vehicle1" value="true">
                     &nbsp;<label for="vehicle1"> {{ 'admission.confirm_admission'|translate }}</label><br>
                 </p>
 
@@ -139,7 +147,8 @@
                     <button type="button" id="prevBtn" onclick="nextPrev(-1)">{{ 'admission.prev'|translate }}</button>
                     &nbsp;
                     <button type="button" id="nextBtn" onclick="nextPrev(1)">{{ 'admission.next'|translate }}</button>
-                    <button [disabled]="admissionForm.invalid" id="submit" type="submit" style="display: none;" > {{ 'admission.submit'|translate }}</button>
+                    <button [disabled]="admissionForm.invalid" id="submit" type="submit" style="display: none;"> {{
+                        'admission.submit'|translate }}</button>
 
                 </div>
             </div>

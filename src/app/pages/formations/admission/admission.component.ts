@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ProgramsService } from 'src/app/services/programs.service';
 import { GlobalConstants } from '../../common/global-constants';
@@ -29,7 +30,8 @@ export class AdmissionComponent implements OnInit {
     private title: Title,
     private formBuilder: FormBuilder,
     private http: HttpClient,
-    private programService: ProgramsService
+    private programService: ProgramsService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -71,15 +73,15 @@ export class AdmissionComponent implements OnInit {
 
   addAdmissionForm() {
     this.admissionForm = this.formBuilder.group({
-      program: ['PLT', Validators.required],
-      concours: ['022022', Validators.required],
+      program: ['Licence de pilote de ligne', Validators.required],
+      concours: ['Concours du 07 Mai 2022', Validators.required],
       fname: ['', Validators.required],
       email: ['', Validators.required],
       phone: ['', Validators.required],
       sexe: ['M', Validators.required],
       age: ['', Validators.required],
-      diplome: ['BAC', Validators.required],
-      center: ['yde', Validators.required],
+      diplome: ['Baccalauréat ou Equivalent', Validators.required],
+      center: ['Yaoundé - Mballa 2', Validators.required],
       cF: ['', Validators.required],
 
 
@@ -102,10 +104,18 @@ export class AdmissionComponent implements OnInit {
           $('#loading').css('visibility', 'hidden');
           $('.body-inner').show();
           $('.admission_success').show();
-          setTimeout(function () {
-            $('.admission_success').hide();
-          }, 5000);
           this.admissionForm.reset();
+
+
+          setTimeout(function () {
+
+            $('.admission_success').hide();
+            this.router.navigate(['/formation']);
+
+
+          }, 5000);
+
+
 
 
         },

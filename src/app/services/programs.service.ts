@@ -26,21 +26,41 @@ export class ProgramsService {
       duration: "004"
     },
     {
-      code: "MDG",
-      name: "Marchandise Dangereuse",
-      duration: "004"
+      code: "CTA",
+      name: "Construction Aéronautique",
+      duration: "03"
     },
     {
       code: "PNC",
       name: "Hôtesse de l'air / Steward",
       duration: "004"
     },
+    {
+      code: "PVB",
+      name: "Passage Vente / Billeterie d'avion",
+      duration: "004"
+    },
+    {
+      code: "HAC",
+      name: "Hôtesse d'accueil",
+      duration: "004"
+    },
+    {
+      code: "PSS",
+      name: "Passage Sol ",
+      duration: "004"
+    },
+    {
+      code: "CC",
+      name: "Contrôle de Chargement",
+      duration: "004"
+    }
   ];
 
   dateComp = [
     {
-      code: "022022",
-      name: "Concours du 22 Février 2022",
+      code: "070522",
+      name: "Concours du 07 Mai 2022",
     }
   ];
 
@@ -48,11 +68,11 @@ export class ProgramsService {
     {
       code: "M",
       name: "Master ou Equivalent",
-    }, 
+    },
     {
       code: "L",
       name: "Licence ou Equivalent",
-    }, 
+    },
     {
       code: "BTS",
       name: "Brévet de Technicien Supérieur ou Equivalent",
