@@ -4,6 +4,7 @@
         "service": "Service",
         "about": "About",
         "contact": "Contact",
+        "submission" : "Submission",
         "formation": "Training"
     },
     "footer": {

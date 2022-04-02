@@ -110,8 +110,6 @@ export class AdmissionComponent implements OnInit {
           setTimeout(function () {
 
             $('.admission_success').hide();
-            this.router.navigate(['/formation']);
-
 
           }, 5000);
 

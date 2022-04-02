@@ -64,6 +64,15 @@ export class ProgramsService {
     }
   ];
 
+
+  listConcours = [
+    {
+      code: "070522",
+      name: "Concours du 07 Mai 2022",
+    }
+  ];
+
+
   nEtdute = [
     {
       code: "M",

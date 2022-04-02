@@ -19,14 +19,21 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // import ngx-translate and the http loader
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LocaleService } from './services/locale.service';
 import { FormationsComponent } from './pages/formations/formations.component';
 import { NewsletterComponent } from './pages/newsletter/newsletter.component';
 import { PiloteComponent } from './pages/pilote/pilote.component';
 import { AdmissionComponent } from './pages/formations/admission/admission.component';
+import { SubmissionComponent } from './pages/submission/submission.component';
+import { PageTitleComponent } from './static/page-title/page-title.component';
+import { SubmissionService } from './services/submission.service'
+import { MaterialExampleModule } from 'material.module';
+import { MatNativeDateModule } from '@angular/material/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -46,10 +53,15 @@ import { AdmissionComponent } from './pages/formations/admission/admission.compo
     NewsletterComponent,
     PiloteComponent,
     AdmissionComponent,
-    
+    SubmissionComponent,
+    PageTitleComponent,
+
   ],
   imports: [
     BrowserModule,
+    MatNativeDateModule,
+    MaterialExampleModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     FormsModule,
@@ -57,16 +69,17 @@ import { AdmissionComponent } from './pages/formations/admission/admission.compo
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
       }
-  })
+    })
 
 
   ],
   providers: [
-    LocaleService
+    LocaleService,
+    SubmissionService
   ],
   bootstrap: [AppComponent]
 })
