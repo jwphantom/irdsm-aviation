@@ -1,7 +1,7 @@
 import { Injectable, NgZone } from '@angular/core';
-import * as auth from 'firebase/auth';
-import { AngularFireAuth } from "@angular/fire/compat/auth";
-import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/compat/firestore';
+import firebase from 'firebase/app';
+import { AngularFireAuth } from "@angular/fire/auth";
+import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Router } from "@angular/router";
 import { HttpClient } from '@angular/common/http';
 import { GlobalConstants } from '../pages/common/global-constants';
@@ -123,7 +123,7 @@ export class AuthService {
 
   // Sign in with Google
   GoogleAuth() {
-    return this.AuthLogin(new auth.GoogleAuthProvider()).then((res: any) => {
+    return this.AuthLogin(new firebase.auth.GoogleAuthProvider()).then((res: any) => {
       if (res) {
         this.router.navigate(['submission']);
       }
