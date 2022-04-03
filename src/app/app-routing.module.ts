@@ -9,7 +9,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { NewsletterComponent } from './pages/newsletter/newsletter.component';
 import { PiloteComponent } from './pages/pilote/pilote.component';
 import { ServicesComponent } from './pages/services/services.component';
-import { SubmissionComponent } from './pages/submission/submission.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -17,7 +16,6 @@ const routes: Routes = [
   { path: 'program-pilote', component: PiloteComponent },
   { path: 'formation', component: FormationsComponent },
   { path: 'admission', component: AdmissionComponent },
-  { path: 'submission', component: SubmissionComponent },
   { path: 'about', component: AboutComponent },
   { path: 'service', component: ServicesComponent },
   { path: 'contact', component: ContactComponent },

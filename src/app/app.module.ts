@@ -27,9 +27,7 @@ import { FormationsComponent } from './pages/formations/formations.component';
 import { NewsletterComponent } from './pages/newsletter/newsletter.component';
 import { PiloteComponent } from './pages/pilote/pilote.component';
 import { AdmissionComponent } from './pages/formations/admission/admission.component';
-import { SubmissionComponent } from './pages/submission/submission.component';
 import { PageTitleComponent } from './static/page-title/page-title.component';
-import { SubmissionService } from './services/submission.service'
 import { MaterialExampleModule } from 'material.module';
 import { MatNativeDateModule } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -53,7 +51,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NewsletterComponent,
     PiloteComponent,
     AdmissionComponent,
-    SubmissionComponent,
     PageTitleComponent,
 
   ],
@@ -79,7 +76,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   providers: [
     LocaleService,
-    SubmissionService
   ],
   bootstrap: [AppComponent]
 })
