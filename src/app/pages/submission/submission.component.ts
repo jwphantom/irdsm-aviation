@@ -6,6 +6,7 @@ import { SubmissionService } from 'src/app/services/submission.service';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { ProgramsService } from 'src/app/services/programs.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-submission',
@@ -30,14 +31,16 @@ export class SubmissionComponent implements OnInit {
   constructor(
     private title: Title,
     private submission: SubmissionService,
-    private programs: ProgramsService
+    private programs: ProgramsService,
+    private auth: AuthService
   ) { }
 
   ngOnInit() {
 
     this.title.setTitle("IRDSM AVIATION - Réponses au formulaire");
 
-    this.storeAdmission()
+    console.log(this.auth.getisLogged)
+    //this.storeAdmission()
     this.listConcours = this.programs.listConcours;
     this.loadScript('../assets/js/jquery.js');
     this.loadScript('../assets/js/plugins.js');
@@ -50,6 +53,7 @@ export class SubmissionComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   ngAfterViewInit() {
+    this.storeAdmission()
   }
 
 
@@ -64,7 +68,6 @@ export class SubmissionComponent implements OnInit {
         //this.sub = submission;
         this.dataSource = new MatTableDataSource<Submission>(submission);
         this.dataSource.paginator = this.paginator;
-        console.log(this.dataSource)
 
       }
     );
@@ -76,6 +79,7 @@ export class SubmissionComponent implements OnInit {
     this.submission.getList(date);
 
   }
+
 
   public loadScript(url: string) {
     const body = <HTMLDivElement>document.body;
