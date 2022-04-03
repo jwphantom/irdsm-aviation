@@ -23,7 +23,6 @@ export class SubmissionService {
 
   async getList(dateC: string) {
 
-    console.log(dateC)
     this.http
       .get<any[]>(`${GlobalConstants.apiURL}/submission/list/${dateC}`)
       .subscribe(
@@ -36,7 +35,21 @@ export class SubmissionService {
         }
       );
 
+  }
 
+  async checkCall(dateC: string) {
+
+    this.http
+      .get<any[]>(`${GlobalConstants.apiURL}/submission/list/${dateC}`)
+      .subscribe(
+        (response) => {
+          this.submission = response;
+          this.emitsubmission();
+        },
+        (error) => {
+          console.log('Erreur ! : ' + error);
+        }
+      );
 
   }
 }
