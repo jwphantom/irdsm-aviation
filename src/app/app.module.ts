@@ -33,6 +33,22 @@ import { SubmissionService } from './services/submission.service'
 import { MaterialExampleModule } from 'material.module';
 import { MatNativeDateModule } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './auth/login/login.component';
+
+//import guard
+import { AuthGuard } from './shared/guard/auth.guard';
+
+
+//import environment
+import { environment } from '../environments/environment';
+
+
+//angular fire import
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 
 @NgModule({
@@ -55,6 +71,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AdmissionComponent,
     SubmissionComponent,
     PageTitleComponent,
+    LoginComponent,
 
   ],
   imports: [
@@ -73,13 +90,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule,
 
 
   ],
   providers: [
     LocaleService,
-    SubmissionService
+    SubmissionService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
