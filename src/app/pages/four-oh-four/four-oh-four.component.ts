@@ -12,9 +12,9 @@ export class FourOhFourComponent implements OnInit {
     private title: Title
   ) { }
 
-  ngOnInit(){   
-    
-    this.title.setTitle("Afrizon - Page Introuvable");
+  ngOnInit() {
+
+    this.title.setTitle("Irdsm Aviation - Page Introuvable");
 
     this.loadScript('../assets/js/jquery.js');
     this.loadScript('../assets/js/plugins.js');
@@ -23,7 +23,7 @@ export class FourOhFourComponent implements OnInit {
   }
 
   public loadScript(url: string) {
-    const body = <HTMLDivElement> document.body;
+    const body = <HTMLDivElement>document.body;
     const script = document.createElement('script');
     script.innerHTML = '';
     script.src = url;

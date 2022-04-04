@@ -178,6 +178,7 @@
         "personal_info": "Informations personnelles",
         "fullname": "Nom Complet",
         "email" : "Email",
+        "ville" : "Ville",
         "phone": "Téléphone",
         "sexe": "Sexe",
         "age" : "Age",

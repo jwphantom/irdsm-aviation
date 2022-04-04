@@ -78,6 +78,7 @@ export class AdmissionComponent implements OnInit {
       fname: ['', Validators.required],
       email: ['', Validators.required],
       phone: ['', Validators.required],
+      ville: ['', Validators.required],
       sexe: ['M', Validators.required],
       age: ['', Validators.required],
       diplome: ['Baccalauréat ou Equivalent', Validators.required],

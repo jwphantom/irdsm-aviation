@@ -4,6 +4,7 @@ export class Submission {
   fname: string;
   email: string;
   phone: string;
+  ville: string;
   sexe: string;
   age: string;
   diplome: string;

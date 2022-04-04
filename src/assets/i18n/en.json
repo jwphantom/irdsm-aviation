@@ -163,6 +163,7 @@
         "email": "Email",
         "phone": "Phone",
         "sexe": "Sexe",
+        "ville" : "City",
         "age": "Age",
         "etude": "Studies",
         "diplome": "Recent diplomas",
