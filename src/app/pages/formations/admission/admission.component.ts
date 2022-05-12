@@ -18,6 +18,7 @@ export class AdmissionComponent implements OnInit {
   programs: any[] | undefined;
   dateComp: any[] | undefined;
   nEtude: any[] | undefined;
+  admissionConfirmation: boolean = false
 
   admissionForm!: FormGroup;
 
@@ -74,7 +75,7 @@ export class AdmissionComponent implements OnInit {
   addAdmissionForm() {
     this.admissionForm = this.formBuilder.group({
       program: ['Licence de pilote de ligne', Validators.required],
-      concours: ['Concours du 07 Mai 2022', Validators.required],
+      concours: ['Concours du 04 Juin 2022', Validators.required],
       fname: ['', Validators.required],
       email: ['', Validators.required],
       phone: ['', Validators.required],
@@ -93,20 +94,24 @@ export class AdmissionComponent implements OnInit {
     $('.body-inner').hide();
     $('#loading').css('visibility', 'visible');
 
-    let rForm = this.admissionForm.value;
 
+    let dateCreation = new Date();
+
+    let responseForm = this.admissionForm.value;
+
+    responseForm['dateCreation'] = dateCreation
 
     this.http
-      .post<any[]>(`${this.baseUrl}/add-admission`, rForm)
+      .post<any[]>(`${this.baseUrl}/add-admission`, responseForm)
       .subscribe(
         (response) => {
 
-          console.log(response);
           $('#loading').css('visibility', 'hidden');
           $('.body-inner').show();
           $('.admission_success').show();
           this.admissionForm.reset();
 
+          this.admissionConfirmation = !this.admissionConfirmation
 
           setTimeout(function () {
 

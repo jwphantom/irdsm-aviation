@@ -16,59 +16,131 @@ export class ProgramsService {
 
   programs = [
     {
-      code: "PLT",
       name: "Licence de pilote de ligne",
       duration: "03"
     },
     {
-      code: "ATE",
-      name: "Agent Technique D'exploitation",
-      duration: "004"
-    },
-    {
-      code: "CTA",
-      name: "Construction Aéronautique",
+      name: "Pilote hélicoptère",
       duration: "03"
     },
     {
-      code: "PNC",
-      name: "Hôtesse de l'air / Steward",
+      name: "Hôtesse de l’air / stewards",
       duration: "004"
     },
     {
-      code: "PVB",
-      name: "Passage Vente / Billeterie d'avion",
+      name: "Technicien Maintenance aéronautique",
+      duration: "03"
+    },
+    {
+      name: "Ingénieur Maintenance aéronautique",
       duration: "004"
     },
     {
-      code: "HAC",
-      name: "Hôtesse d'accueil",
+      name: "Avionique",
       duration: "004"
     },
     {
-      code: "PSS",
-      name: "Passage Sol ",
+      name: "Ingénieur ou Technicien aviation civile",
       duration: "004"
     },
     {
-      code: "CC",
-      name: "Contrôle de Chargement",
+      name: "Agent Technique d’Exploitation",
+      duration: "004"
+    },
+    {
+      name: "Agent de services commerciaux",
+      duration: "004"
+    },
+    {
+      name: "Agent de passage escale aéroportuaire ",
+      duration: "004"
+    },
+    {
+      name: "Superviseur et agent d’escale aéroportuaire",
+      duration: "004"
+    },
+    {
+      name: "Passage sol",
+      duration: "004"
+    },
+    {
+      name: "Agent d’accompagnement aéroportuaire de passagers à mobilité réduite",
+      duration: "03"
+    },
+    {
+      name: "Agent Fret ; Import/Export ; Transitaire ; Magasinier",
+      duration: "03"
+    },
+    {
+      name: "Spécialiste passage vente",
+      duration: "004"
+    },
+    {
+      name: "Agent billetterie",
+      duration: "03"
+    },
+    {
+      name: "Hôtesse d’accueil",
+      duration: "004"
+    },
+    {
+      name: "Spécialiste catering",
+      duration: "004"
+    },
+    {
+      name: "Agent litiges bagages",
+      duration: "004"
+    },
+    {
+      name: "Spécialiste marchandises dangereuses",
+      duration: "004"
+    },
+    {
+      name: "Agent de voyage",
+      duration: "004"
+    },
+    {
+      name: "Conducteurs d’engins",
+      duration: "004"
+    },
+    {
+      name: "Conducteurs push back",
+      duration: "004"
+    },
+    {
+      name: "Dégivreur",
+      duration: "004"
+    },
+    {
+      name: "Agents pistes",
+      duration: "004"
+    },
+    {
+      name: "Magasinier cariste",
+      duration: "004"
+    },
+    {
+      name: "Agent d’entretien et de nettoyage",
+      duration: "004"
+    },
+    {
+      name: "Supervision/ Contrôle",
       duration: "004"
     }
   ];
 
   dateComp = [
     {
-      code: "070522",
-      name: "Concours du 07 Mai 2022",
+      code: "040622",
+      name: "Concours du 04 Juin 2022",
     }
   ];
 
 
   listConcours = [
     {
-      code: "070522",
-      name: "Concours du 07 Mai 2022",
+      code: "040622",
+      name: "Concours du 04 Juin 2022",
     }
   ];
 

@@ -183,13 +183,14 @@
         "sexe": "Sexe",
         "age" : "Age",
         "etude": "Etudes",
-        "diplome": "Diplômes récents",
+        "diplome": "Diplôme récent",
         "choice_center" : "Choix du centre",
         "center": "Centre",
         "confirm_admission" : "Je certifie que les informations renseignées sont exactes",
         "prev": "Précedent",
         "next": "Suivant",
-        "submit" : "Valider"
+        "submit" : "Valider",
+        "admission_sent": "Confirmation de demande d'admission"
     }
 
 }

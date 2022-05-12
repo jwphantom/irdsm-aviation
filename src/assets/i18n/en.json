@@ -166,12 +166,13 @@
         "ville" : "City",
         "age": "Age",
         "etude": "Studies",
-        "diplome": "Recent diplomas",
+        "diplome": "Recent diploma",
         "choice_center": "Choice of centre",
         "center": "Centre",
         "confirm_admission": "I certify that the information provided is accurate",
         "prev": "Pevious",
         "next": "Next",
-        "submit": "Validate"
+        "submit": "Validate",
+        "admission_sent": "Confirmation of application"
     }
 }

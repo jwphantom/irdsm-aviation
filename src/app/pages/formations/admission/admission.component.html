@@ -49,124 +49,146 @@
     </div>
     <!--end: Inspiro Slider -->
 
+    <div *ngIf="!admissionConfirmation">
 
-    <section>
+        <section>
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>{{ 'admission.begin'|translate }}</h2>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="form" class="container">
+            <form id="regForm" [formGroup]="admissionForm" (ngSubmit)="submitAdmission()" method="post" action=""
+                autocomplete="off">
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">
+
+                    {{ 'admission.select_prog'|translate }}<span class="star_required">*</span>
+                    <p>
+                        <select formControlName="program" id="monselect">
+                            <option *ngFor="let p of programs" value="{{p.name}}">{{ p.name }} </option>
+                        </select>
+                    </p>
+
+                    {{ 'admission.re-entry'|translate }}<span class="star_required">*</span>
+                    <p>
+                        <select formControlName="concours" id="monselect">
+                            <option *ngFor="let d of dateComp" value="{{d.name}}">{{ d.name }} </option>
+                        </select>
+                    </p>
+
+
+                </div>
+                <div class="tab">
+                    <h4>{{ 'admission.personal_info'|translate }} </h4>
+                    {{ 'admission.fullname'|translate }}<span class="star_required">*</span>
+                    <p><input formControlName="fname" placeholder="{{ 'admission.fullname'|translate }}"
+                            oninput="this.className = ''" name="name"></p>
+
+                    {{ 'admission.email'|translate }}<span class="star_required">*</span>
+                    <p><input formControlName="email" placeholder="{{ 'admission.email'|translate }}:"
+                            oninput="this.className = ''" name="email"></p>
+
+                    {{ 'admission.phone'|translate }}<span class="star_required">*</span>
+                    <p><input formControlName="phone" placeholder="{{ 'admission.phone'|translate }}"
+                            oninput="this.className = ''" name="phone"></p>
+
+                    {{ 'admission.sexe'|translate }}<span class="star_required">*</span>
+                    <p>
+                        <select formControlName="sexe" id="monselect">
+                            <option *ngFor="let p of dateComp" value="M">Masculin </option>
+                            <option *ngFor="let p of dateComp" value="F">Féminin </option>
+                        </select>
+                    </p>
+
+                    {{ 'admission.age'|translate }}<span class="star_required">*</span>
+                    <p><input formControlName="age" placeholder="{{ 'admission.age'|translate }}"
+                            oninput="this.className = ''" type="number" name="age"></p>
+
+                    {{ 'admission.ville'|translate }}<span class="star_required">*</span>
+                    <p><input formControlName="ville" placeholder="{{ 'admission.ville'|translate }}"
+                            oninput="this.className = ''" name="ville"></p>
+
+
+
+
+
+                </div>
+                <div class="tab">
+
+                    <h4>{{ 'admission.etude'|translate }}</h4>
+
+                    {{ 'admission.diplome'|translate }}<span class="star_required">*</span>
+                    <p>
+                        <select formControlName="diplome" id="monselect">
+                            <option *ngFor="let n of nEtude" value="{{n.name}}">{{ n.name }} </option>
+                        </select>
+                    </p>
+
+                </div>
+                <div class="tab">
+                    <h4> {{ 'admission.choice_center'|translate }} </h4>
+
+                    {{ 'admission.center'|translate }}<span class="star_required">*</span>
+                    <p>
+                        <select formControlName="center" id="monselect">
+                            <option *ngFor="let p of dateComp" value="Yaoundé - Mballa 2">Yaoundé - Mballa 2 </option>
+                            <option *ngFor="let p of dateComp" value="Douala - Immeuble Dekage">Douala - Immeuble Dekage
+                            </option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <input oninput="this.className = ''" required formControlName="cF" type="checkbox" id="cF"
+                            name="vehicle1" value="true">
+                        &nbsp;<label for="vehicle1"> {{ 'admission.confirm_admission'|translate }}</label><br>
+                    </p>
+
+
+                </div>
+                <div style="overflow:auto;">
+                    <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">{{ 'admission.prev'|translate
+                            }}</button>
+                        &nbsp;
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">{{ 'admission.next'|translate
+                            }}</button>
+                        <button [disabled]="admissionForm.invalid" id="submit" type="submit" style="display: none;"> {{
+                            'admission.submit'|translate }}</button>
+
+                    </div>
+                </div>
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <section *ngIf="admissionConfirmation" class="admission_confirmation">
         <div class="container">
             <div class="heading-text heading-section text-center">
-                <h2>{{ 'admission.begin'|translate }}</h2>
+                <h2> <img src="assets/images/forms/success/check.png" alt="check" class="check"> {{
+                    'admission.admission_sent'|translate }}
+                </h2>
             </div>
+            <button type="button" routerLink="/formation" class="btn btn-dark">{{ 'formation.title'|translate
+                }}</button>
+
 
         </div>
     </section>
 
-    <div id="form" class="container">
-        <form id="regForm" [formGroup]="admissionForm" (ngSubmit)="submitAdmission()" method="post" action=""
-            autocomplete="off">
-            <!-- One "tab" for each step in the form: -->
-            <div class="tab">
 
-                {{ 'admission.select_prog'|translate }}:
-                <p>
-                    <select formControlName="program" id="monselect">
-                        <option *ngFor="let p of programs" value="{{p.name}}">{{ p.name }} </option>
-                    </select>
-                </p>
-
-                {{ 'admission.re-entry'|translate }}:
-                <p>
-                    <select formControlName="concours" id="monselect">
-                        <option *ngFor="let d of dateComp" value="{{d.name}}">{{ d.name }} </option>
-                    </select>
-                </p>
-
-
-            </div>
-            <div class="tab">
-                <h4>{{ 'admission.personal_info'|translate }} </h4>
-                {{ 'admission.fullname'|translate }}:
-                <p><input formControlName="fname" placeholder="{{ 'admission.fullname'|translate }}"
-                        oninput="this.className = ''" name="name"></p>
-
-                {{ 'admission.email'|translate }}:
-                <p><input formControlName="email" placeholder="{{ 'admission.email'|translate }}:"
-                        oninput="this.className = ''" name="email"></p>
-
-                {{ 'admission.phone'|translate }}:
-                <p><input formControlName="phone" placeholder="{{ 'admission.phone'|translate }}"
-                        oninput="this.className = ''" name="phone"></p>
-
-                {{ 'admission.sexe'|translate }}:
-                <p>
-                    <select formControlName="sexe" id="monselect">
-                        <option *ngFor="let p of dateComp" value="M">Masculin </option>
-                        <option *ngFor="let p of dateComp" value="F">Féminin </option>
-                    </select>
-                </p>
-
-                {{ 'admission.age'|translate }}:
-                <p><input formControlName="age" placeholder="{{ 'admission.age'|translate }}"
-                        oninput="this.className = ''" type="number" name="age"></p>
-
-                {{ 'admission.ville'|translate }}:
-                <p><input formControlName="ville" placeholder="{{ 'admission.ville'|translate }}"
-                        oninput="this.className = ''" name="ville"></p>
-
-
-
-
-
-            </div>
-            <div class="tab">
-
-                <h4>{{ 'admission.etude'|translate }}</h4>
-
-                {{ 'admission.diplome'|translate }}:
-                <p>
-                    <select formControlName="diplome" id="monselect">
-                        <option *ngFor="let n of nEtude" value="{{n.name}}">{{ n.name }} </option>
-                    </select>
-                </p>
-
-            </div>
-            <div class="tab">
-                <h4> {{ 'admission.choice_center'|translate }} </h4>
-
-                {{ 'admission.center'|translate }}:
-                <p>
-                    <select formControlName="center" id="monselect">
-                        <option *ngFor="let p of dateComp" value="Yaoundé - Mballa 2">Yaoundé - Mballa 2 </option>
-                        <option *ngFor="let p of dateComp" value="Douala - Immeuble Dekage">Douala - Immeuble Dekage
-                        </option>
-                    </select>
-                </p>
-
-                <p>
-                    <input oninput="this.className = ''" required formControlName="cF" type="checkbox" id="cF"
-                        name="vehicle1" value="true">
-                    &nbsp;<label for="vehicle1"> {{ 'admission.confirm_admission'|translate }}</label><br>
-                </p>
-
-
-            </div>
-            <div style="overflow:auto;">
-                <div style="float:right;">
-                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">{{ 'admission.prev'|translate }}</button>
-                    &nbsp;
-                    <button type="button" id="nextBtn" onclick="nextPrev(1)">{{ 'admission.next'|translate }}</button>
-                    <button [disabled]="admissionForm.invalid" id="submit" type="submit" style="display: none;"> {{
-                        'admission.submit'|translate }}</button>
-
-                </div>
-            </div>
-            <!-- Circles which indicates the steps of the form: -->
-            <div style="text-align:center;margin-top:40px;">
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
-            </div>
-        </form>
-    </div>
 
     <app-footer></app-footer>
     <!-- end: Footer -->
