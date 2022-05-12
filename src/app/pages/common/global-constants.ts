@@ -1,7 +1,7 @@
 export class GlobalConstants {
     public static apiURL: string = "https://server-irdsm-aviation.herokuapp.com/api";
     //public static apiURL: string = "http://localhost:3001/api";
-    public static version: string = "1.1.0";
+    public static version: string = "1.2.0";
     public static year: string = "2022";
     public static email: string = "campus@irdsm-aviation";
     public static appname: string = "IRDSM AVIATION"
