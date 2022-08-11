@@ -75,7 +75,7 @@ export class AdmissionComponent implements OnInit {
   addAdmissionForm() {
     this.admissionForm = this.formBuilder.group({
       program: ['Licence de pilote de ligne', Validators.required],
-      concours: ['Concours du 04 Juin 2022', Validators.required],
+      concours: ['Concours du 17 Septembre 2022', Validators.required],
       fname: ['', Validators.required],
       email: ['', Validators.required],
       phone: ['', Validators.required],
