@@ -173,6 +173,7 @@
     "admission": {
         "title": "Admission",
         "begin": "Commencons votre procédure",
+        "nb" : "En remplissant ce formulaire, vous acceptez d'être contacté par IRDSM-AVIATION pour avoir plus d'information sur les modalités du concours et accepter une prise de rendez-vous dans nos campus.",
         "select_prog" : "Choix de programme",
         "re-entry": "Date du concours",
         "personal_info": "Informations personnelles",
@@ -190,7 +191,9 @@
         "prev": "Précedent",
         "next": "Suivant",
         "submit" : "Valider",
-        "admission_sent": "Confirmation de demande d'admission"
+        "admission_sent": "Confirmation de demande d'admission",
+        "check_mail" : "Veuillez consulter vos mails afin de voir le récapitulatif de vos informations transmises à l'administration"
+
     }
 
 }

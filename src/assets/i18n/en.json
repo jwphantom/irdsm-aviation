@@ -156,6 +156,7 @@
     "admission": {
         "title": "Admission",
         "begin": "Let's start your procedure",
+        "nb" : "By filling in this form, you agree to be contacted by IRDSM-AVIATION for more information about the competition and to make an appointment to visit our campuses.",
         "select_prog": "Choice of programme",
         "re-entry": "Date of Competition",
         "personal_info": "Personal Information",
@@ -173,6 +174,7 @@
         "prev": "Pevious",
         "next": "Next",
         "submit": "Validate",
-        "admission_sent": "Confirmation of application"
+        "admission_sent": "Confirmation of application",
+        "check_mail" : "Please check your emails to see the summary of your information sent to the administration"
     }
 }

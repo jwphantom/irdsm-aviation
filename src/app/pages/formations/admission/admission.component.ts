@@ -16,14 +16,16 @@ import { GlobalConstants } from '../../common/global-constants';
 export class AdmissionComponent implements OnInit {
 
   programs: any[] | undefined;
+
   dateComp: any[] | undefined;
+
   nEtude: any[] | undefined;
+
   admissionConfirmation: boolean = false
 
   admissionForm!: FormGroup;
 
   private baseUrl = GlobalConstants.apiURL;
-
 
   programsSubscription: Subscription | undefined;
 
@@ -38,26 +40,57 @@ export class AdmissionComponent implements OnInit {
   ngOnInit() {
 
     this.title.setTitle("IRDSM AVIATION - Admission En Ligne");
+
     this.storePrograms();
+
     this.storeDateCompetition();
+
     this.storeNEtude();
+
     this.addAdmissionForm();
 
     this.loadScript('../assets/js/jquery.js');
+
     this.loadScript('../assets/js/plugins.js');
+
     this.loadScript('../assets/js/functions.js');
+
     this.loadScript('../assets/js/form.js');
+
     this.loadScript('https://code.iconify.design/1/1.0.7/iconify.min.js');
   }
 
   public loadScript(url: string) {
     const body = <HTMLDivElement>document.body;
+
     const script = document.createElement('script');
+
     script.innerHTML = '';
+
     script.src = url;
+
     script.async = false;
+
     script.defer = true;
+
     body.appendChild(script);
+  }
+
+  clickConfirmationForm() {
+
+    if (!$('input[name="cF"]').is(':checked')) {
+
+      this.admissionForm.controls['cF'].setValue(true)
+
+      $('input[name="cF"]').prop('checked', true);
+
+    } else {
+
+      this.admissionForm.controls['cF'].setValue(false)
+
+      $('input[name="cF"]').prop('checked', false);
+
+    }
   }
 
   storePrograms() {
@@ -85,48 +118,48 @@ export class AdmissionComponent implements OnInit {
       diplome: ['Baccalauréat ou Equivalent', Validators.required],
       center: ['Yaoundé - Mballa 2', Validators.required],
       cF: ['', Validators.required],
-
-
     });
   }
 
   submitAdmission() {
-    $('.body-inner').hide();
-    $('#loading').css('visibility', 'visible');
+    // $('.body-inner').hide();
+    // $('#loading').css('visibility', 'visible');
 
 
-    let dateCreation = new Date();
+    let dateCreation = new Date()
 
-    let responseForm = this.admissionForm.value;
+    let responseForm = this.admissionForm.value
 
     responseForm['dateCreation'] = dateCreation
 
-    this.http
-      .post<any[]>(`${this.baseUrl}/add-admission`, responseForm)
-      .subscribe(
-        (response) => {
+    console.log(responseForm)
 
-          $('#loading').css('visibility', 'hidden');
-          $('.body-inner').show();
-          $('.admission_success').show();
-          this.admissionForm.reset();
+    // this.http
+    //   .post<any[]>(`${this.baseUrl}/add-admission`, responseForm)
+    //   .subscribe(
+    //     (response) => {
 
-          this.admissionConfirmation = !this.admissionConfirmation
+    //       $('#loading').css('visibility', 'hidden');
+    //       $('.body-inner').show();
+    //       $('.admission_success').show();
+    //       this.admissionForm.reset();
 
-          setTimeout(function () {
+    //       this.admissionConfirmation = !this.admissionConfirmation
 
-            $('.admission_success').hide();
+    //       setTimeout(function () {
 
-          }, 5000);
+    //         $('.admission_success').hide();
+
+    //       }, 5000);
 
 
 
 
-        },
-        (error) => {
-          console.log('Erreur ! : ' + error);
-        }
-      );
+    //     },
+    //     (error) => {
+    //       console.log('Erreur ! : ' + error);
+    //     }
+    //   );
 
 
   }

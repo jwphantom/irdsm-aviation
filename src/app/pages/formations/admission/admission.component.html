@@ -49,12 +49,15 @@
     </div>
     <!--end: Inspiro Slider -->
 
-    <div *ngIf="!admissionConfirmation">
+    <div *ngIf="admissionConfirmation">
 
         <section>
             <div class="container">
                 <div class="heading-text heading-section text-center">
                     <h2>{{ 'admission.begin'|translate }}</h2>
+
+                    NB : {{ 'admission.nb'|translate }}
+
                 </div>
 
             </div>
@@ -111,12 +114,8 @@
                     {{ 'admission.ville'|translate }}<span class="star_required">*</span>
                     <p><input formControlName="ville" placeholder="{{ 'admission.ville'|translate }}"
                             oninput="this.className = ''" name="ville"></p>
-
-
-
-
-
                 </div>
+
                 <div class="tab">
 
                     <h4>{{ 'admission.etude'|translate }}</h4>
@@ -141,10 +140,11 @@
                         </select>
                     </p>
 
-                    <p>
+                    <p class="confirmationForm">
                         <input oninput="this.className = ''" required formControlName="cF" type="checkbox" id="cF"
-                            name="vehicle1" value="true">
-                        &nbsp;<label for="vehicle1"> {{ 'admission.confirm_admission'|translate }}</label><br>
+                            name="cF" value="true">
+                        &nbsp;<label (click)="clickConfirmationForm()" for="vehicle1"> {{
+                            'admission.confirm_admission'|translate }}</label><br>
                     </p>
 
 
@@ -174,13 +174,20 @@
     </div>
 
 
-    <section *ngIf="admissionConfirmation" class="admission_confirmation">
+    <section *ngIf="!admissionConfirmation" class="admission_confirmation">
         <div class="container">
             <div class="heading-text heading-section text-center">
                 <h2> <img src="assets/images/forms/success/check.png" alt="check" class="check"> {{
                     'admission.admission_sent'|translate }}
                 </h2>
             </div>
+
+            <p>
+                {{ 'admission.check_mail'|translate}}
+                Veuillez consulter vos mails afin de voir le récapitulatif de vos informations transmises à
+                l'administration
+            </p>
+            <br>
             <button type="button" routerLink="/formation" class="btn btn-dark">{{ 'formation.title'|translate
                 }}</button>
 
