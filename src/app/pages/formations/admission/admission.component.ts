@@ -122,8 +122,8 @@ export class AdmissionComponent implements OnInit {
   }
 
   submitAdmission() {
-    // $('.body-inner').hide();
-    // $('#loading').css('visibility', 'visible');
+    $('.body-inner').hide();
+    $('#loading').css('visibility', 'visible');
 
 
     let dateCreation = new Date()
@@ -132,34 +132,34 @@ export class AdmissionComponent implements OnInit {
 
     responseForm['dateCreation'] = dateCreation
 
-    console.log(responseForm)
+    //console.log(responseForm)
 
-    // this.http
-    //   .post<any[]>(`${this.baseUrl}/add-admission`, responseForm)
-    //   .subscribe(
-    //     (response) => {
+    this.http
+      .post<any[]>(`${this.baseUrl}/add-admission`, responseForm)
+      .subscribe(
+        (response) => {
 
-    //       $('#loading').css('visibility', 'hidden');
-    //       $('.body-inner').show();
-    //       $('.admission_success').show();
-    //       this.admissionForm.reset();
+          $('#loading').css('visibility', 'hidden');
+          $('.body-inner').show();
+          $('.admission_success').show();
+          this.admissionForm.reset();
 
-    //       this.admissionConfirmation = !this.admissionConfirmation
+          this.admissionConfirmation = !this.admissionConfirmation
 
-    //       setTimeout(function () {
+          setTimeout(function () {
 
-    //         $('.admission_success').hide();
+            $('.admission_success').hide();
 
-    //       }, 5000);
-
-
+          }, 5000);
 
 
-    //     },
-    //     (error) => {
-    //       console.log('Erreur ! : ' + error);
-    //     }
-    //   );
+
+
+        },
+        (error) => {
+          console.log('Erreur ! : ' + error);
+        }
+      );
 
 
   }
