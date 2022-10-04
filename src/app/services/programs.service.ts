@@ -28,6 +28,10 @@ export class ProgramsService {
       duration: "004"
     },
     {
+      name: "Douane Import / Export",
+      duration: "004"
+    },
+    {
       name: "Technicien Maintenance aéronautique",
       duration: "03"
     },
@@ -131,16 +135,16 @@ export class ProgramsService {
 
   dateComp = [
     {
-      code: "170922",
-      name: "Concours du 17 Septembre 2022",
+      code: "121022",
+      name: "Concours du 12 Novembre 2022",
     }
   ];
 
 
   listConcours = [
     {
-      code: "170922",
-      name: "Concours du 17 Septembre 2022",
+      code: "121022",
+      name: "Concours du 12 Novembre 2022",
     }
   ];
 
