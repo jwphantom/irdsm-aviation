@@ -1,0 +1,311 @@
+<div class="body-inner">
+    <!-- Header -->
+    <header id="header" data-fullwidth="true">
+        <div class="header-inner">
+            <div class="container">
+                <!--Logo-->
+                <div id="logo">
+                    <a routerLink="/home">
+                        <img src="assets/images/logo.png" class="logo-default">
+                    </a>
+                </div>
+                <!--End: Logo-->
+                <!--Header Extras-->
+                <app-language></app-language>
+                <!--end: Header Extras-->
+                <!--Navigation Resposnive Trigger-->
+                <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
+                <!--end: Navigation Resposnive Trigger-->
+                <!--Navigation-->
+                <app-menu></app-menu>
+                <!--end: Navigation-->
+            </div>
+        </div>
+    </header>
+    <!-- end: Header -->
+    <!-- Inspiro Slider -->
+    <div id="slider" class="inspiro-slider dots-creative" data-height-xs="360">
+        <!-- Slide 2 -->
+        <div class="slide kenburns" style="background-image:url('assets/images/formations/po-sc.jpeg');">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="slide-captions text-center text-light">
+                    <!-- Captions -->
+                    <h1>{{ 'formation.title'|translate }}</h1>
+                    <span>Polytechnique</span>
+
+                    <!-- end: Captions -->
+                </div>
+            </div>
+        </div>
+        <!-- end: Slide 2 -->
+
+    </div>
+    <!--end: Inspiro Slider -->
+
+
+    <section>
+        <div class="container">
+            <div class="heading-text heading-section text-center">
+                <h2>{{ 'service.what_we_do'|translate }}</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-deck">
+
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/free-photo/solar-panels-meadow_1286-146.jpg?1&w=2000&t=st=1667654477~exp=1667655077~hmac=b2f6c22f3c1b4c256f911cad4559e5ef234af8d6a70c699bb6b77286f4590de8"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Energie Renouvelable</h5>
+                                <p class="card-text">’ingénieur en énergies renouvelables (ENR) est amené à travailler
+                                    sur des projets liés à l’éolien, au photovoltaïque, à l’hydraulique, à la biomasse,
+                                    etc. Il participe et coordonne la phase d’avant-projet, qui précède la phase de
+                                    réalisation, en passant des demandes d’autorisations. Son but final : obtenir un
+                                    permis de construire. Découvrez tout ce qu’il faut savoir sur le métier d’ingénieur
+                                    en énergies renouvelables : ses missions quotidiennes, les formations à suivre, son
+                                    salaire et les postes à pourvoir.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : 18 à 40 mois </small>
+                                &nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/free-photo/cargo-ship-miami-harbor_649448-5019.jpg?w=1800&t=st=1667654595~exp=1667655195~hmac=a122194d3f33ec39cc09ab4a78835232545f896c20c56e9bd943180c9a8318f3"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Mécanique naval</h5>
+                                <p class="card-text">En mer, au port, sur un chalutier, un pétrolier ou un navire de
+                                    guerre, le mécanicien de marine est un spécialiste des machines et de tous les
+                                    appareils qui propulsent le navire : moteurs, arbre d’hélice, turbines, commandes de
+                                    direction, etc.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : 09 mois </small>&nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/free-photo/construction-engineer_93675-130344.jpg?w=1800&t=st=1667654666~exp=1667655266~hmac=6191a9d8f77555f47efe17dd467e78a8d4fd2d6f5f6d1047a796c63675b1c942"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Construction bâtiments</h5>
+                                <p class="card-text">Le technicien du bâtiment est responsable de la conception, gestion
+                                    et maintenance du patrimoine bâti d'une collectivité territoriale ou d'une
+                                    intercommunalité.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : Max 70 heures
+                                </small>&nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-deck">
+
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/free-photo/new-road-construction_1385-3188.jpg?w=1800&t=st=1667654734~exp=1667655334~hmac=6b55f3298f87523434bb1d14024cb369e381a8a00323c42345f8669b8e4b1dec"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Pont et chaussées</h5>
+                                <p class="card-text">Développer les infrastructures d'une région ou d'un pays. Il
+                                    conçoit des ponts, des barrages, des bâtiments, des routes, des tunnels... Il
+                                    réalise également des aménagements liés à l'eau ou à l'énergie.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : 03 mois</small>&nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/premium-photo/engineer-working-repairing-electric-panel-with-solar-panels-background-concept-teamwork-training-renewable_28914-1715.jpg?w=1800"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Electrotechnique</h5>
+                                <p class="card-text">Les professionnels de l’électrotechnique sont des spécialistes de
+                                    l’installation et de la maintenance des systèmes électriques. Les équipements mis en
+                                    service ou dépannés sont variés : éclairage, chauffage, climatisation, alarme,
+                                    enseigne électrique…</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : 105 heures </small>&nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/free-photo/cargo-ship-miami-harbor_649448-5019.jpg?w=1800&t=st=1667654595~exp=1667655195~hmac=a122194d3f33ec39cc09ab4a78835232545f896c20c56e9bd943180c9a8318f3"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Electricité naval</h5>
+                                <p class="card-text">Les techniciens de maintenance navale – Electricité/mécanique sont
+                                    responsables des systèmes de propulsion du bâtiment et de la production
+                                    d'électricité</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : 105 heures </small>&nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-deck">
+
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/free-photo/engineer-cooperation-male-female-technician-maintenance-control-relay-robot-arm-system-welding-with-tablet-laptop-control-quality-operate-process-work-heavy-industry-40-manufacturing-factory_609648-835.jpg?w=1800&t=st=1667654839~exp=1667655439~hmac=b6709cec8206a812450d3e9d12f0cdb4a95b3cba90e60d53831a6417f803794e"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Maintenance biomédicale</h5>
+                                <p class="card-text">Installer, maintenir, effectuer le contrôle qualité et assurer la
+                                    traçabilité des interventions, concernant les dispositifs ou équipements biomédicaux
+                                    dont il a la charge. Informer sur les risques liés à l'utilisation des équipements
+                                    biomédicaux et former à leur bon fonctionnement.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : 105 heures </small>&nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/premium-photo/antenna-mobile-devices_72104-18.jpg?w=1800"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Réseaux et télécommunication</h5>
+                                <p class="card-text">Le Technicien Réseaux et Télécoms assure le bon fonctionnement et
+                                    la disponibilité des réseaux et télécoms de son groupe paritaire de protection
+                                    sociale. Il installe et paramètre la partie active de la connectique, du matériel
+                                    informatique et des logiciels réseaux.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : 35 heures </small>&nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/free-photo/man-with-mask-welding-metal-atelier_23-2149025925.jpg?w=1480&t=st=1667654895~exp=1667655495~hmac=f7e0551627f950465004f50b9094f34d0d1d1b3cea3580e07d3a5dcfb953efdb"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Construction d’ouvrage métallique</h5>
+                                <p class="card-text">Son travail revient à effectuer des coupes, des pliages, des
+                                    cintrages (donner une courbure à la barre de métal), des forgeages (travailler les
+                                    métaux au feu) et d'autres perçages aussi bien manuellement qu'à l'aide de machines
+                                    (plieuses, cisailles, rouleuses).</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : 105 heures </small>&nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-deck">
+
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/premium-photo/professional-afro-handyman-contractor-repairing-dishwasher-need-change-old-dishwasher-hose-black-guy-blue-overalls-is-concentrated-work-kitchen-indoors-side-view-portrait_183219-8427.jpg?w=1800"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Plomberie et installation sanitaire</h5>
+                                <p class="card-text">Le plombier installe, répare, règle et entretient les équipements
+                                    sanitaires (toilettes, salles de bains, etc.), ainsi que les canalisations de
+                                    distribution de gaz, d'eau et d'évacuation (en acier, cuivre, PVC, etc.)</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : 105 heures </small>&nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://infosconcourseducation.com/wp-content/uploads/2022/04/360_F_389074235_lAU0OD8SoiS4OYWjSAiWtVLg2o8GhPKI-1.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Topographie géométrie</h5>
+                                <p class="card-text">Le topographe ou opérateur géomètre procède aux relevés métriques
+                                    qui permettent d'établir un plan et une carte exacte de tous les détails d'un
+                                    terrain (relevé foncier, bornage, division foncière, relevé d'architecture...).</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : 105 heures </small>&nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/premium-photo/plaster-painter-is-ready-paint-wall-hands-roller-brush-stepladder-bucket-paint-background_102577-138.jpg?w=1800"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Technicien Peinture bâtiments</h5>
+                                <p class="card-text">Il est chargé d'obtenir le coloris souhaité par le client. Poser le
+                                    revêtement : il ne se contente pas de peindre. Il pose également les moquettes
+                                    murales, les papiers-peints ou encore les moquettes. Respecter les consignes de
+                                    sécurité : il travaille fréquemment sur des échafaudages et sur des échelles.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ 'formation.duree'|translate }} : 105 heures </small>&nbsp;
+                                <button routerLink="/polytechnique/admission" class="btn btn-xs ">Admission</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+
+
+
+
+
+
+    <app-footer></app-footer>
+    <!-- end: Footer -->
+</div> <!-- end: Body Inner -->
+<!-- Scroll top -->
+<app-scroll-top></app-scroll-top>

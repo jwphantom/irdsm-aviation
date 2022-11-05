@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
+
 @Injectable({
   providedIn: 'root'
 })
-export class ProgramsService {
-
+export class ProgramService {
 
   programsSubject = new Subject<any[]>();
   dateCompSubject = new Subject<any[]>();
@@ -16,59 +16,59 @@ export class ProgramsService {
 
   programs = [
     {
-      name: "Licence de pilote de ligne",
+      name: "Energie renouvelables",
       duration: "03"
     },
     {
-      name: "Pilote hélicoptère",
+      name: "Mécanique naval",
       duration: "03"
     },
     {
-      name: "Hôtesse de l’air / stewards",
+      name: "Carrelage",
       duration: "004"
     },
     {
-      name: "Douane Import / Export",
+      name: "Bâtiment",
       duration: "004"
     },
     {
-      name: "Technicien Maintenance aéronautique",
+      name: "Magasinier",
       duration: "03"
     },
     {
-      name: "Ingénieur Maintenance aéronautique",
+      name: "Construction bâtiments",
       duration: "004"
     },
     {
-      name: "Avionique",
+      name: "Pont et chaussées",
       duration: "004"
     },
     {
-      name: "Ingénieur ou Technicien aviation civile",
+      name: "Peinture bâtiments",
       duration: "004"
     },
     {
-      name: "Agent Technique d’Exploitation",
+      name: "Dessins et projections",
       duration: "004"
     },
     {
-      name: "Agent de services commerciaux",
+      name: "Electrotechnique",
       duration: "004"
     },
     {
-      name: "Agent de passage escale aéroportuaire ",
+      name: "Electricité naval",
       duration: "004"
     },
     {
-      name: "Superviseur et agent d’escale aéroportuaire",
+      name: "Maintenance informatique",
       duration: "004"
     },
     {
-      name: "Passage sol",
+      name: "Maintenance biomédicale",
       duration: "004"
     },
     {
-      name: "Agent d’accompagnement aéroportuaire de passagers à mobilité réduite",
+      name: "Maintenance électromécanique",
       duration: "03"
     },
     {
@@ -76,19 +76,19 @@ export class ProgramsService {
       duration: "03"
     },
     {
-      name: "Spécialiste passage vente",
+      name: "Réseaux et télécommunication",
       duration: "004"
     },
     {
-      name: "Agent billetterie",
+      name: "Montage vidéo",
       duration: "03"
     },
     {
-      name: "Hôtesse d’accueil",
+      name: "Montage des réseaux informatiques",
       duration: "004"
     },
     {
-      name: "Spécialiste catering",
+      name: "Construction d’ouvrage métallique",
       duration: "004"
     },
     {
@@ -96,11 +96,11 @@ export class ProgramsService {
       duration: "004"
     },
     {
-      name: "Spécialiste marchandises dangereuses",
+      name: "Coffrage ferraillage",
       duration: "004"
     },
     {
-      name: "Agent de voyage",
+      name: "Matelotage",
       duration: "004"
     },
     {
@@ -108,45 +108,27 @@ export class ProgramsService {
       duration: "004"
     },
     {
-      name: "Conducteurs push back",
+      name: "Plomberie et installation sanitaire",
       duration: "004"
     },
     {
-      name: "Dégivreur",
-      duration: "004"
-    },
-    {
-      name: "Agents pistes",
-      duration: "004"
-    },
-    {
-      name: "Magasinier cariste",
-      duration: "004"
-    },
-    {
-      name: "Agent d’entretien et de nettoyage",
-      duration: "004"
-    },
-    {
-      name: "Supervision/ Contrôle",
+      name: "Topographie géométrie",
       duration: "004"
     }
   ];
 
-
-
   dateComp = [
     {
-      code: "121022",
-      name: "Concours du 12 Novembre 2022",
+      code: "121222",
+      name: "Concours du 12 Décembre 2022",
     }
   ];
 
 
   listConcours = [
     {
-      code: "121022",
-      name: "Concours du 12 Novembre 2022",
+      code: "121222",
+      name: "Concours du 12 Décembre 2022",
     }
   ];
 

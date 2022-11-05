@@ -31,6 +31,9 @@ import { PageTitleComponent } from './static/page-title/page-title.component';
 import { MaterialExampleModule } from 'material.module';
 import { MatNativeDateModule } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PolytechniqueComponent } from './pages/polytechnique/polytechnique.component';
+import { AdmissionPolytechniqueComponent } from './pages/polytechnique/admission-polytechnique/admission-polytechnique.component';
+import { FormationPolytechniqueComponent } from './pages/polytechnique/formation-polytechnique/formation-polytechnique.component';
 
 
 @NgModule({
@@ -52,6 +55,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PiloteComponent,
     AdmissionComponent,
     PageTitleComponent,
+    PolytechniqueComponent,
+    AdmissionPolytechniqueComponent,
+    FormationPolytechniqueComponent
 
   ],
   imports: [

@@ -157,6 +157,7 @@
         "title": "Admission",
         "begin": "Let's start your procedure",
         "nb" : "By filling in this form, you agree to be contacted by IRDSM-AVIATION for more information about the competition and to make an appointment to visit our campuses.",
+        "nb_polytechnique" : "By filling in this form, you agree to be contacted by IFP POLYTECHNIQUE for more information about the competition and to make an appointment to visit our campuses.",
         "select_prog": "Choice of programme",
         "re-entry": "Date of Competition",
         "personal_info": "Personal Information",

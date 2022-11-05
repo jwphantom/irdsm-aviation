@@ -1,19 +1,20 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { ProgramsService } from 'src/app/services/programs.service';
+import { ProgramService } from 'src/app/pages/polytechnique/services/program.service';
 import { GlobalConstants } from '../../common/global-constants';
 
 
+
 @Component({
-  selector: 'app-admission',
-  templateUrl: './admission.component.html',
-  styleUrls: ['./admission.component.scss']
+  selector: 'app-admission-polytechnique',
+  templateUrl: './admission-polytechnique.component.html',
+  styleUrls: ['./admission-polytechnique.component.scss']
 })
-export class AdmissionComponent implements OnInit {
+export class AdmissionPolytechniqueComponent implements OnInit {
 
   programs: any[] | undefined;
 
@@ -33,13 +34,13 @@ export class AdmissionComponent implements OnInit {
     private title: Title,
     private formBuilder: FormBuilder,
     private http: HttpClient,
-    private programService: ProgramsService,
+    private programService: ProgramService,
     private router: Router
   ) { }
 
   ngOnInit() {
 
-    this.title.setTitle("IRDSM AVIATION - Admission En Ligne");
+    this.title.setTitle("IFP POLYTECHNIQUE - Admission En Ligne");
 
     this.storePrograms();
 
@@ -107,8 +108,8 @@ export class AdmissionComponent implements OnInit {
 
   addAdmissionForm() {
     this.admissionForm = this.formBuilder.group({
-      program: ['Licence de pilote de ligne', Validators.required],
-      concours: ['Concours du 12 Novembre 2022', Validators.required],
+      program: ['Electricité naval', Validators.required],
+      concours: ['Concours du 12 Décembre 2022', Validators.required],
       fname: ['', Validators.required],
       email: ['', Validators.required],
       phone: ['', Validators.required],
@@ -132,10 +133,8 @@ export class AdmissionComponent implements OnInit {
 
     responseForm['dateCreation'] = dateCreation
 
-    //console.log(responseForm)
-
     this.http
-      .post<any[]>(`${this.baseUrl}/add-admission`, responseForm)
+      .post<any[]>(`${this.baseUrl}/polytechnique/add-admission`, responseForm)
       .subscribe(
         (response) => {
 
@@ -152,9 +151,6 @@ export class AdmissionComponent implements OnInit {
 
           }, 5000);
 
-
-
-
         },
         (error) => {
           console.log('Erreur ! : ' + error);
@@ -163,4 +159,5 @@ export class AdmissionComponent implements OnInit {
 
 
   }
+
 }
