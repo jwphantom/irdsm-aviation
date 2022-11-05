@@ -92,19 +92,11 @@ export class ProgramService {
       duration: "004"
     },
     {
-      name: "Agent litiges bagages",
-      duration: "004"
-    },
-    {
       name: "Coffrage ferraillage",
       duration: "004"
     },
     {
       name: "Matelotage",
-      duration: "004"
-    },
-    {
-      name: "Conducteurs d’engins",
       duration: "004"
     },
     {
