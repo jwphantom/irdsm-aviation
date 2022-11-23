@@ -11,10 +11,10 @@ app.use(cors({ origin: "*" }));
 app.use(bodyParser.json());
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + "/dist/irdsm-aviation"));
+app.use(express.static(__dirname + "/dist/irdsmaviation"));
 
 app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname + "/dist/irdsm-aviation/index.html"));
+  res.sendFile(path.join(__dirname + "/dist/irdsmaviation/index.html"));
 });
 
 // Start the app by listening on the default Heroku port
