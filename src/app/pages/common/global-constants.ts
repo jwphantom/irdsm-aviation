@@ -9,7 +9,7 @@ export class GlobalConstants {
     //public static apiURL: string = "http://localhost:3001/api";
 
     //app version
-    public static version: string = "1.3.0";
+    public static version: string = "1.4.0";
 
     //year of current year
     public static year: string = "2022";
