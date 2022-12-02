@@ -1324,7 +1324,7 @@ class AdmissionComponent {
     addAdmissionForm() {
         this.admissionForm = this.formBuilder.group({
             program: ['Licence de pilote de ligne', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
-            concours: ['Concours du 12 Novembre 2022', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            concours: ['Concours du 14 Janvier 2023', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             fname: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             phone: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
@@ -4852,14 +4852,14 @@ class ProgramsService {
         ];
         this.dateComp = [
             {
-                code: "121022",
-                name: "Concours du 12 Novembre 2022",
+                code: "140123",
+                name: "Concours du 14 Janvier 2023",
             }
         ];
         this.listConcours = [
             {
-                code: "121022",
-                name: "Concours du 12 Novembre 2022",
+                code: "140123",
+                name: "Concours du 14 Janvier 2023",
             }
         ];
         this.nEtdute = [
