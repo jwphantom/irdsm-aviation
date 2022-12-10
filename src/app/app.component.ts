@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import {TranslateService} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 import { LocaleService } from './services/locale.service';
+import { Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationError, Event, ActivatedRoute } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { Title } from '@angular/platform-browser';
+
+declare const gtag: Function; // <------------Important: the declartion for gtag is required!
 
 
 @Component({
@@ -9,22 +13,29 @@ import { LocaleService } from './services/locale.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'afrizon';
 
-  
-  constructor(private translate: TranslateService,
-            private localeservice : LocaleService,
-            private router : Router) {
-    translate.setDefaultLang(this.localeservice.lang);
-}
+  constructor(
+    private translate: TranslateService,
+    private activatedRoute: ActivatedRoute,
+    private localeservice: LocaleService,
+    private router: Router) {
 
-ngOnInit(){
-}
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        gtag('config', 'G-TE5VY08SY7', { 'page_path': event.urlAfterRedirects });
+      }
+    })
+    translate.setDefaultLang(this.localeservice.lang);
+  }
+
+  ngOnInit() {
+  }
 
 
   onActivate(event) {
-    window.scroll(0,0);
+    window.scroll(0, 0);
 
-}
+  }
 }
