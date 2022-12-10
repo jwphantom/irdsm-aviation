@@ -13,7 +13,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'afrizon';
+  title = 'irdsm-aviation';
 
   constructor(
     private translate: TranslateService,
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   }
 
 
-  onActivate(event) {
+  onActivate(event: any) {
     window.scroll(0, 0);
 
   }
