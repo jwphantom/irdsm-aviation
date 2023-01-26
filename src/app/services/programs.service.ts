@@ -32,22 +32,6 @@ export class ProgramsService {
       duration: "004"
     },
     {
-      name: "Technicien Maintenance aéronautique",
-      duration: "03"
-    },
-    {
-      name: "Ingénieur Maintenance aéronautique",
-      duration: "004"
-    },
-    {
-      name: "Avionique",
-      duration: "004"
-    },
-    {
-      name: "Ingénieur ou Technicien aviation civile",
-      duration: "004"
-    },
-    {
       name: "Agent Technique d’Exploitation",
       duration: "004"
     },
@@ -56,7 +40,7 @@ export class ProgramsService {
       duration: "004"
     },
     {
-      name: "Agent de passage escale aéroportuaire ",
+      name: "Agent de passage escale aéroportuaire",
       duration: "004"
     },
     {
@@ -93,10 +77,6 @@ export class ProgramsService {
     },
     {
       name: "Agent litiges bagages",
-      duration: "004"
-    },
-    {
-      name: "Spécialiste marchandises dangereuses",
       duration: "004"
     },
     {
