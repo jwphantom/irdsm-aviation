@@ -5,7 +5,7 @@ import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ProgramService } from 'src/app/pages/polytechnique/services/program.service';
-import { GlobalConstants } from '../../common/global-constants';
+import { GlobalConstants } from '../../../common/global-constants';
 
 
 

@@ -12,9 +12,9 @@ export class AboutComponent implements OnInit {
     private title: Title
   ) { }
 
-  ngOnInit(){   
-    
-    this.title.setTitle("Afrizon - About");
+  ngOnInit() {
+
+    this.title.setTitle("IRDSM AVIATION - About");
 
     this.loadScript('../assets/js/jquery.js');
     this.loadScript('../assets/js/plugins.js');
@@ -23,7 +23,7 @@ export class AboutComponent implements OnInit {
   }
 
   public loadScript(url: string) {
-    const body = <HTMLDivElement> document.body;
+    const body = <HTMLDivElement>document.body;
     const script = document.createElement('script');
     script.innerHTML = '';
     script.src = url;

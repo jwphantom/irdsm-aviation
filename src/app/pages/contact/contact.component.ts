@@ -20,22 +20,22 @@ export class ContactComponent implements OnInit {
     private httpClient: HttpClient
   ) { }
 
-  ngOnInit(){   
+  ngOnInit() {
     this.loadScript('../assets/plugins/gmap3/gmap.min.js');
     this.loadScript('../assets/plugins/gmap3/map-styles.js');
-    this.title.setTitle("Afrizon - Contact");
+    this.title.setTitle("IRDSM AVIATION - Contact");
     this.loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBByIEHoI3npofmaqJpkZUNqSUp_ermqmQ');
 
     this.loadScript('../assets/js/jquery.js');
     this.loadScript('../assets/js/plugins.js');
     this.loadScript('../assets/js/functions.js');
-    
+
     this.loadScript('https://assets.calendly.com/assets/external/widget.js');
 
   }
 
   public loadScript(url: string) {
-    const body = <HTMLDivElement> document.body;
+    const body = <HTMLDivElement>document.body;
     const script = document.createElement('script');
     script.innerHTML = '';
     script.src = url;
@@ -47,10 +47,10 @@ export class ContactComponent implements OnInit {
   onSubmit(form: NgForm) {
 
     let message = {
-      name : form.value['name'],
-      email : form.value['email'],
-      subject : form.value['subject'],
-      message : form.value['message']
+      name: form.value['name'],
+      email: form.value['email'],
+      subject: form.value['subject'],
+      message: form.value['message']
     }
 
     this.httpClient
@@ -64,7 +64,7 @@ export class ContactComponent implements OnInit {
         }
       );
 
-    
-}
+
+  }
 
 }

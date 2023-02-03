@@ -574,6 +574,41 @@ function HttpLoaderFactory(http) {
 
 /***/ }),
 
+/***/ "./src/app/common/global-constants.ts":
+/*!********************************************!*\
+  !*** ./src/app/common/global-constants.ts ***!
+  \********************************************/
+/*! exports provided: GlobalConstants */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GlobalConstants", function() { return GlobalConstants; });
+class GlobalConstants {
+}
+//old server on heroku
+//public static apiURL: string = "https://server-irdsm-aviation.herokuapp.com/api";
+//new server on https://render.com/
+GlobalConstants.apiURL = "https://server-irdsm-aviation.onrender.com/api";
+//local server
+//public static apiURL: string = "http://localhost:3001/api";
+//app version
+GlobalConstants.version = "1.4.0";
+//year of current year
+GlobalConstants.year = "2022";
+//email website
+GlobalConstants.email = "campus@irdsm-aviation";
+//name of websitz
+GlobalConstants.appname = "IRDSM AVIATION";
+//phone customer support
+GlobalConstants.phone1 = "(+237) 698 885 161";
+GlobalConstants.phone2 = "(+237) 673 908 319";
+//localisation of campus
+GlobalConstants.localisation = "Cameroun, Yaoundé, Mballa2, Entrée Jamot, 1ère entrée à droite, Deuxième résidence";
+
+
+/***/ }),
+
 /***/ "./src/app/pages/about/about.component.ts":
 /*!************************************************!*\
   !*** ./src/app/pages/about/about.component.ts ***!
@@ -608,7 +643,7 @@ class AboutComponent {
         this.title = title;
     }
     ngOnInit() {
-        this.title.setTitle("Afrizon - About");
+        this.title.setTitle("IRDSM AVIATION - About");
         this.loadScript('../assets/js/jquery.js');
         this.loadScript('../assets/js/plugins.js');
         this.loadScript('../assets/js/functions.js');
@@ -748,41 +783,6 @@ AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
 
 /***/ }),
 
-/***/ "./src/app/pages/common/global-constants.ts":
-/*!**************************************************!*\
-  !*** ./src/app/pages/common/global-constants.ts ***!
-  \**************************************************/
-/*! exports provided: GlobalConstants */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GlobalConstants", function() { return GlobalConstants; });
-class GlobalConstants {
-}
-//old server on heroku
-//public static apiURL: string = "https://server-irdsm-aviation.herokuapp.com/api";
-//new server on https://render.com/
-GlobalConstants.apiURL = "https://server-irdsm-aviation.onrender.com/api";
-//local server
-//public static apiURL: string = "http://localhost:3001/api";
-//app version
-GlobalConstants.version = "1.4.0";
-//year of current year
-GlobalConstants.year = "2022";
-//email website
-GlobalConstants.email = "campus@irdsm-aviation";
-//name of websitz
-GlobalConstants.appname = "IRDSM AVIATION";
-//phone customer support
-GlobalConstants.phone1 = "(+237) 698 885 161";
-GlobalConstants.phone2 = "(+237) 673 908 319";
-//localisation of campus
-GlobalConstants.localisation = "Cameroun, Yaoundé, Mballa2, Entrée Jamot, 1ère entrée à droite, Deuxième résidence";
-
-
-/***/ }),
-
 /***/ "./src/app/pages/contact/contact.component.ts":
 /*!****************************************************!*\
   !*** ./src/app/pages/contact/contact.component.ts ***!
@@ -820,7 +820,7 @@ class ContactComponent {
     ngOnInit() {
         this.loadScript('../assets/plugins/gmap3/gmap.min.js');
         this.loadScript('../assets/plugins/gmap3/map-styles.js');
-        this.title.setTitle("Afrizon - Contact");
+        this.title.setTitle("IRDSM AVIATION - Contact");
         this.loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBByIEHoI3npofmaqJpkZUNqSUp_ermqmQ');
         this.loadScript('../assets/js/jquery.js');
         this.loadScript('../assets/js/plugins.js');
@@ -946,7 +946,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdmissionComponent", function() { return AdmissionComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var _common_global_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/global-constants */ "./src/app/pages/common/global-constants.ts");
+/* harmony import */ var _common_global_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../common/global-constants */ "./src/app/common/global-constants.ts");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 /* harmony import */ var src_app_services_programs_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/programs.service */ "./src/app/services/programs.service.ts");
@@ -1347,7 +1347,7 @@ class AdmissionComponent {
         responseForm['dateCreation'] = dateCreation;
         //console.log(responseForm)
         this.http
-            .post(`${this.baseUrl}/add-admission`, responseForm)
+            .post(`${this.baseUrl}/submission/add-admission`, responseForm)
             .subscribe((response) => {
             $('#loading').css('visibility', 'hidden');
             $('.body-inner').show();
@@ -3331,7 +3331,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdmissionPolytechniqueComponent", function() { return AdmissionPolytechniqueComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var _common_global_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/global-constants */ "./src/app/pages/common/global-constants.ts");
+/* harmony import */ var _common_global_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../common/global-constants */ "./src/app/common/global-constants.ts");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 /* harmony import */ var src_app_pages_polytechnique_services_program_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/pages/polytechnique/services/program.service */ "./src/app/pages/polytechnique/services/program.service.ts");
@@ -4905,7 +4905,7 @@ ProgramsService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var src_app_pages_common_global_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/pages/common/global-constants */ "./src/app/pages/common/global-constants.ts");
+/* harmony import */ var src_app_common_global_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/common/global-constants */ "./src/app/common/global-constants.ts");
 /* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ngx-translate/core */ "./node_modules/@ngx-translate/core/__ivy_ngcc__/fesm2015/ngx-translate-core.js");
 
 
@@ -4913,13 +4913,13 @@ __webpack_require__.r(__webpack_exports__);
 
 class FooterComponent {
     constructor() {
-        this.year = src_app_pages_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].year;
-        this.version = src_app_pages_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].version;
-        this.appname = src_app_pages_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].appname;
-        this.localisation = src_app_pages_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].localisation;
-        this.phone1 = src_app_pages_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].phone1;
-        this.phone2 = src_app_pages_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].phone2;
-        this.email = src_app_pages_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].email;
+        this.year = src_app_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].year;
+        this.version = src_app_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].version;
+        this.appname = src_app_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].appname;
+        this.localisation = src_app_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].localisation;
+        this.phone1 = src_app_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].phone1;
+        this.phone2 = src_app_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].phone2;
+        this.email = src_app_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].email;
     }
     ngOnInit() {
     }

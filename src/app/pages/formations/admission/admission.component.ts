@@ -5,7 +5,7 @@ import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ProgramsService } from 'src/app/services/programs.service';
-import { GlobalConstants } from '../../common/global-constants';
+import { GlobalConstants } from '../../../common/global-constants';
 
 
 @Component({
@@ -135,7 +135,7 @@ export class AdmissionComponent implements OnInit {
     //console.log(responseForm)
 
     this.http
-      .post<any[]>(`${this.baseUrl}/add-admission`, responseForm)
+      .post<any[]>(`${this.baseUrl}/submission/add-admission`, responseForm)
       .subscribe(
         (response) => {
 
@@ -151,8 +151,6 @@ export class AdmissionComponent implements OnInit {
             $('.admission_success').hide();
 
           }, 5000);
-
-
 
 
         },
