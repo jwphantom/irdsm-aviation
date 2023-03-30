@@ -589,9 +589,9 @@ class GlobalConstants {
 //old server on heroku
 //public static apiURL: string = "https://server-irdsm-aviation.herokuapp.com/api";
 //new server on https://render.com/
-GlobalConstants.apiURL = "https://server-irdsm-aviation.onrender.com/api";
+//public static apiURL: string = "https://server-irdsm-aviation.onrender.com/api";
 //local server
-//public static apiURL: string = "http://localhost:3001/api";
+GlobalConstants.apiURL = "http://localhost:3001/api";
 //app version
 GlobalConstants.version = "1.4.0";
 //year of current year
@@ -1327,7 +1327,7 @@ class AdmissionComponent {
     addAdmissionForm() {
         this.admissionForm = this.formBuilder.group({
             program: ['Licence de pilote de ligne', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
-            concours: ['Concours du 11 Mars 2023', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            concours: ['Concours du 06 Mai 2023', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             fname: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             phone: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
@@ -4835,14 +4835,14 @@ class ProgramsService {
         ];
         this.dateComp = [
             {
-                code: "110323",
-                name: "Concours du 11 Mars 2023",
+                code: "060523",
+                name: "Concours du 06 Mai 2023",
             }
         ];
         this.listConcours = [
             {
-                code: "110323",
-                name: "Concours du 11 Mars 2023",
+                code: "060523",
+                name: "Concours du 06 Mai 2023",
             }
         ];
         this.nEtdute = [
