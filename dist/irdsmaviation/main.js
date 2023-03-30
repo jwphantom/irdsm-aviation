@@ -593,16 +593,16 @@ class GlobalConstants {
 //local server
 GlobalConstants.apiURL = "http://localhost:3001/api";
 //app version
-GlobalConstants.version = "1.4.0";
+GlobalConstants.version = "1.4.2";
 //year of current year
-GlobalConstants.year = "2022";
+GlobalConstants.year = "2023";
 //email website
 GlobalConstants.email = "campus@irdsm-aviation";
 //name of websitz
 GlobalConstants.appname = "IRDSM AVIATION";
 //phone customer support
-GlobalConstants.phone1 = "(+237) 698 885 161";
-GlobalConstants.phone2 = "(+237) 673 908 319";
+GlobalConstants.phone1 = "(+237) 655 819 408";
+GlobalConstants.phone2 = "(+237) 690 362 956";
 //localisation of campus
 GlobalConstants.localisation = "Cameroun, Yaoundé, Mballa2, Entrée Jamot, 1ère entrée à droite, Deuxième résidence";
 
