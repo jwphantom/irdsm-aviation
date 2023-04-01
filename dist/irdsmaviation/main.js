@@ -589,9 +589,9 @@ class GlobalConstants {
 //old server on heroku
 //public static apiURL: string = "https://server-irdsm-aviation.herokuapp.com/api";
 //new server on https://render.com/
-//public static apiURL: string = "https://server-irdsm-aviation.onrender.com/api";
+GlobalConstants.apiURL = "https://server-irdsm-aviation.onrender.com/api";
 //local server
-GlobalConstants.apiURL = "http://localhost:3001/api";
+//public static apiURL: string = "http://localhost:3001/api";
 //app version
 GlobalConstants.version = "1.4.2";
 //year of current year
