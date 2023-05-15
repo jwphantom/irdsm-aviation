@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ProgramsService } from 'src/app/services/programs.service';
 import { GlobalConstants } from '../../../common/global-constants';
+import { CompetitionService } from 'src/app/services/competition/competition.service';
+import { Competition } from 'src/app/models/competition';
 
 
 @Component({
@@ -14,6 +16,11 @@ import { GlobalConstants } from '../../../common/global-constants';
   styleUrls: ['./admission.component.scss']
 })
 export class AdmissionComponent implements OnInit {
+
+  competitions: any;
+  competitionSuscription: Subscription | undefined
+
+  listConcours: any[] | undefined
 
   programs: any[] | undefined;
 
@@ -34,7 +41,8 @@ export class AdmissionComponent implements OnInit {
     private formBuilder: FormBuilder,
     private http: HttpClient,
     private programService: ProgramsService,
-    private router: Router
+    private router: Router,
+    public competitionService: CompetitionService,
   ) { }
 
   ngOnInit() {
@@ -46,6 +54,8 @@ export class AdmissionComponent implements OnInit {
     this.storeDateCompetition();
 
     this.storeNEtude();
+
+    this.storeCompetition()
 
     this.addAdmissionForm();
 
@@ -161,4 +171,14 @@ export class AdmissionComponent implements OnInit {
 
 
   }
+
+  storeCompetition() {
+    this.competitionService.getList()
+    this.competitionSuscription = this.competitionService.competitionSubject.subscribe(
+      (competition: Competition[]) => {
+        this.competitions = competition[competition.length - 1]
+      }
+    );
+  }
+
 }

@@ -79,7 +79,7 @@
                     {{ 'admission.re-entry'|translate }}<span class="star_required">*</span>
                     <p>
                         <select formControlName="concours" id="monselect">
-                            <option *ngFor="let d of dateComp" value="{{d.name}}">{{ d.name }} </option>
+                            <option value="{{competitions?.name}}">{{ competitions?.name }} </option>
                         </select>
                     </p>
 

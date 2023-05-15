@@ -5,11 +5,8 @@ export class GlobalConstants {
     //new server on https://render.com/
     //public static apiURL: string = "https://server-irdsm-aviation.onrender.com/api";
 
-    //new server on https://render.com/
-    public static apiURL: string = "https://server-irdsm-aviation.onrender.com/api";
-
     //local server
-    //public static apiURL: string = "http://localhost:3001/api";
+    public static apiURL: string = "http://localhost:3001/api";
 
     //app version
     public static version: string = "1.4.3";
