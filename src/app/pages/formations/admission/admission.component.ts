@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
@@ -17,8 +17,10 @@ import { Competition } from 'src/app/models/competition';
 })
 export class AdmissionComponent implements OnInit {
 
-  competitions: any;
+  competitions: Competition;
   competitionSuscription: Subscription | undefined
+
+  selectedCompetition: any = undefined
 
   listConcours: any[] | undefined
 
@@ -43,6 +45,7 @@ export class AdmissionComponent implements OnInit {
     private programService: ProgramsService,
     private router: Router,
     public competitionService: CompetitionService,
+    private cdr: ChangeDetectorRef
   ) { }
 
   ngOnInit() {
@@ -118,7 +121,7 @@ export class AdmissionComponent implements OnInit {
   addAdmissionForm() {
     this.admissionForm = this.formBuilder.group({
       program: ['Licence de pilote de ligne', Validators.required],
-      concours: ['Concours du 06 Mai 2023', Validators.required],
+      concours: ["", Validators.required],
       fname: ['', Validators.required],
       email: ['', Validators.required],
       phone: ['', Validators.required],
@@ -177,6 +180,8 @@ export class AdmissionComponent implements OnInit {
     this.competitionSuscription = this.competitionService.competitionSubject.subscribe(
       (competition: Competition[]) => {
         this.competitions = competition[competition.length - 1]
+        this.selectedCompetition = this.competitions.name
+        this.cdr.detectChanges();
       }
     );
   }

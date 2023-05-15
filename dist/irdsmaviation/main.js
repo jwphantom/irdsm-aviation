@@ -1030,6 +1030,7 @@ function AdmissionComponent_div_25_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "select", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AdmissionComponent_div_25_Template_select_ngModelChange_24_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r7); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r8.selectedCompetition = $event; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "option", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1145,7 +1146,7 @@ function AdmissionComponent_div_25_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](104, "input", 42);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](105, " \u00A0");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "label", 43);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AdmissionComponent_div_25_Template_label_click_106_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r7); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r8.clickConfirmationForm(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AdmissionComponent_div_25_Template_label_click_106_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r7); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r9.clickConfirmationForm(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](107);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](108, "translate");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1181,65 +1182,67 @@ function AdmissionComponent_div_25_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](6, 30, "admission.begin"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](6, 31, "admission.begin"));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" NB : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](8, 32, "admission.nb"), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" NB : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](8, 33, "admission.nb"), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx_r0.admissionForm);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](13, 34, "admission.select_prog"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](13, 35, "admission.select_prog"), "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r0.programs);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](20, 36, "admission.re-entry"), "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](20, 37, "admission.re-entry"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r0.selectedCompetition);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("value", ctx_r0.competitions == null ? null : ctx_r0.competitions.name);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", ctx_r0.competitions == null ? null : ctx_r0.competitions.name, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](30, 38, "admission.personal_info"), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](30, 39, "admission.personal_info"), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](32, 40, "admission.fullname"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](32, 41, "admission.fullname"), "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("placeholder", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](37, 42, "admission.fullname"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("placeholder", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](37, 43, "admission.fullname"));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](39, 44, "admission.email"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](39, 45, "admission.email"), "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("placeholder", "", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](44, 46, "admission.email"), ":");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("placeholder", "", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](44, 47, "admission.email"), ":");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](46, 48, "admission.phone"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](46, 49, "admission.phone"), "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("placeholder", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](51, 50, "admission.phone"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("placeholder", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](51, 51, "admission.phone"));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](53, 52, "admission.sexe"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](53, 53, "admission.sexe"), "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](63, 54, "admission.age"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](63, 55, "admission.age"), "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("placeholder", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](68, 56, "admission.age"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("placeholder", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](68, 57, "admission.age"));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](70, 58, "admission.ville"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](70, 59, "admission.ville"), "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("placeholder", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](75, 60, "admission.ville"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("placeholder", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](75, 61, "admission.ville"));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](79, 62, "admission.etude"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](79, 63, "admission.etude"));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](81, 64, "admission.diplome"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](81, 65, "admission.diplome"), "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r0.nEtude);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](90, 66, "admission.choice_center"), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](90, 67, "admission.choice_center"), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](92, 68, "admission.center"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](92, 69, "admission.center"), "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](108, 70, "admission.confirm_admission"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](108, 71, "admission.confirm_admission"), "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](114, 72, "admission.prev"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](114, 73, "admission.prev"));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](118, 74, "admission.next"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](118, 75, "admission.next"));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx_r0.admissionForm.invalid);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](121, 76, "admission.submit"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](121, 77, "admission.submit"), "");
 } }
 function AdmissionComponent_section_26_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 51);
@@ -1271,13 +1274,15 @@ function AdmissionComponent_section_26_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](13, 7, "formation.title"));
 } }
 class AdmissionComponent {
-    constructor(title, formBuilder, http, programService, router, competitionService) {
+    constructor(title, formBuilder, http, programService, router, competitionService, cdr) {
         this.title = title;
         this.formBuilder = formBuilder;
         this.http = http;
         this.programService = programService;
         this.router = router;
         this.competitionService = competitionService;
+        this.cdr = cdr;
+        this.selectedCompetition = undefined;
         this.admissionConfirmation = false;
         this.baseUrl = _common_global_constants__WEBPACK_IMPORTED_MODULE_2__["GlobalConstants"].apiURL;
     }
@@ -1325,7 +1330,7 @@ class AdmissionComponent {
     addAdmissionForm() {
         this.admissionForm = this.formBuilder.group({
             program: ['Licence de pilote de ligne', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
-            concours: ['Concours du 06 Mai 2023', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            concours: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             fname: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             phone: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
@@ -1363,11 +1368,13 @@ class AdmissionComponent {
         this.competitionService.getList();
         this.competitionSuscription = this.competitionService.competitionSubject.subscribe((competition) => {
             this.competitions = competition[competition.length - 1];
+            this.selectedCompetition = this.competitions.name;
+            this.cdr.detectChanges();
         });
     }
 }
-AdmissionComponent.ɵfac = function AdmissionComponent_Factory(t) { return new (t || AdmissionComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Title"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_programs_service__WEBPACK_IMPORTED_MODULE_5__["ProgramsService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_competition_competition_service__WEBPACK_IMPORTED_MODULE_7__["CompetitionService"])); };
-AdmissionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AdmissionComponent, selectors: [["app-admission"]], decls: 29, vars: 5, consts: [["id", "loading", 1, "d-flex", "align-items-center", "justify-content-center"], ["src", "assets/images/animations/Dual-Ball-1s-200px.svg", 2, "width", "60px", "height", "60px"], ["id", "flash_message_success", 1, "admission_success"], [1, "fas", "fa-check"], [1, "body-inner"], ["id", "header", "data-fullwidth", "true"], [1, "header-inner"], [1, "container"], ["id", "logo"], ["routerLink", "/home"], ["src", "assets/images/logo.png", 1, "logo-default"], ["id", "mainMenu-trigger"], [1, "lines-button", "x"], [1, "lines"], ["id", "slider", "data-height-xs", "260", 1, "inspiro-slider", "dots-creative"], [1, "slide", "kenburns", 2, "background-image", "url('assets/images/formations/ata.jpg')"], [1, "bg-overlay"], [1, "slide-captions", "text-center", "text-light"], [4, "ngIf"], ["class", "admission_confirmation", 4, "ngIf"], [1, "heading-text", "heading-section", "text-center"], ["id", "form", 1, "container"], ["id", "regForm", "method", "post", "action", "", "autocomplete", "off", 3, "formGroup", "ngSubmit"], [1, "tab"], [1, "star_required"], ["formControlName", "program", "id", "monselect"], [3, "value", 4, "ngFor", "ngForOf"], ["formControlName", "concours", "id", "monselect"], [3, "value"], ["formControlName", "fname", "oninput", "this.className = ''", "name", "name", 3, "placeholder"], ["formControlName", "email", "oninput", "this.className = ''", "name", "email", 3, "placeholder"], ["formControlName", "phone", "oninput", "this.className = ''", "name", "phone", 3, "placeholder"], ["formControlName", "sexe", "id", "monselect"], ["value", "M"], ["value", "F"], ["formControlName", "age", "oninput", "this.className = ''", "type", "number", "name", "age", 3, "placeholder"], ["formControlName", "ville", "oninput", "this.className = ''", "name", "ville", 3, "placeholder"], ["formControlName", "diplome", "id", "monselect"], ["formControlName", "center", "id", "monselect"], ["value", "Yaound\u00E9 - Mballa 2"], ["value", "Douala - Immeuble Dekage"], [1, "confirmationForm"], ["oninput", "this.className = ''", "required", "", "formControlName", "cF", "type", "checkbox", "id", "cF", "name", "cF", "value", "true"], ["for", "vehicle1", 3, "click"], [2, "overflow", "auto"], [2, "float", "right"], ["type", "button", "id", "prevBtn", "onclick", "nextPrev(-1)"], ["type", "button", "id", "nextBtn", "onclick", "nextPrev(1)"], ["id", "submit", "type", "submit", 2, "display", "none", 3, "disabled"], [2, "text-align", "center", "margin-top", "40px"], [1, "step"], [1, "admission_confirmation"], ["src", "assets/images/forms/success/check.png", "alt", "check", 1, "check"], ["type", "button", "routerLink", "/formation", 1, "btn", "btn-dark"]], template: function AdmissionComponent_Template(rf, ctx) { if (rf & 1) {
+AdmissionComponent.ɵfac = function AdmissionComponent_Factory(t) { return new (t || AdmissionComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Title"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_programs_service__WEBPACK_IMPORTED_MODULE_5__["ProgramsService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_competition_competition_service__WEBPACK_IMPORTED_MODULE_7__["CompetitionService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+AdmissionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AdmissionComponent, selectors: [["app-admission"]], decls: 29, vars: 5, consts: [["id", "loading", 1, "d-flex", "align-items-center", "justify-content-center"], ["src", "assets/images/animations/Dual-Ball-1s-200px.svg", 2, "width", "60px", "height", "60px"], ["id", "flash_message_success", 1, "admission_success"], [1, "fas", "fa-check"], [1, "body-inner"], ["id", "header", "data-fullwidth", "true"], [1, "header-inner"], [1, "container"], ["id", "logo"], ["routerLink", "/home"], ["src", "assets/images/logo.png", 1, "logo-default"], ["id", "mainMenu-trigger"], [1, "lines-button", "x"], [1, "lines"], ["id", "slider", "data-height-xs", "260", 1, "inspiro-slider", "dots-creative"], [1, "slide", "kenburns", 2, "background-image", "url('assets/images/formations/ata.jpg')"], [1, "bg-overlay"], [1, "slide-captions", "text-center", "text-light"], [4, "ngIf"], ["class", "admission_confirmation", 4, "ngIf"], [1, "heading-text", "heading-section", "text-center"], ["id", "form", 1, "container"], ["id", "regForm", "method", "post", "action", "", "autocomplete", "off", 3, "formGroup", "ngSubmit"], [1, "tab"], [1, "star_required"], ["formControlName", "program", "id", "monselect"], [3, "value", 4, "ngFor", "ngForOf"], ["formControlName", "concours", "id", "monselect", 3, "ngModel", "ngModelChange"], [3, "value"], ["formControlName", "fname", "oninput", "this.className = ''", "name", "name", 3, "placeholder"], ["formControlName", "email", "oninput", "this.className = ''", "name", "email", 3, "placeholder"], ["formControlName", "phone", "oninput", "this.className = ''", "name", "phone", 3, "placeholder"], ["formControlName", "sexe", "id", "monselect"], ["value", "M"], ["value", "F"], ["formControlName", "age", "oninput", "this.className = ''", "type", "number", "name", "age", 3, "placeholder"], ["formControlName", "ville", "oninput", "this.className = ''", "name", "ville", 3, "placeholder"], ["formControlName", "diplome", "id", "monselect"], ["formControlName", "center", "id", "monselect"], ["value", "Yaound\u00E9 - Mballa 2"], ["value", "Douala - Immeuble Dekage"], [1, "confirmationForm"], ["oninput", "this.className = ''", "required", "", "formControlName", "cF", "type", "checkbox", "id", "cF", "name", "cF", "value", "true"], ["for", "vehicle1", 3, "click"], [2, "overflow", "auto"], [2, "float", "right"], ["type", "button", "id", "prevBtn", "onclick", "nextPrev(-1)"], ["type", "button", "id", "nextBtn", "onclick", "nextPrev(1)"], ["id", "submit", "type", "submit", 2, "display", "none", 3, "disabled"], [2, "text-align", "center", "margin-top", "40px"], [1, "step"], [1, "admission_confirmation"], ["src", "assets/images/forms/success/check.png", "alt", "check", 1, "check"], ["type", "button", "routerLink", "/formation", 1, "btn", "btn-dark"]], template: function AdmissionComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1407,7 +1414,7 @@ AdmissionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](25, AdmissionComponent_div_25_Template, 127, 78, "div", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](25, AdmissionComponent_div_25_Template, 127, 79, "div", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](26, AdmissionComponent_section_26_Template, 14, 9, "section", 19);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "app-footer");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1427,7 +1434,7 @@ AdmissionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
                 templateUrl: './admission.component.html',
                 styleUrls: ['./admission.component.scss']
             }]
-    }], function () { return [{ type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Title"] }, { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] }, { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClient"] }, { type: src_app_services_programs_service__WEBPACK_IMPORTED_MODULE_5__["ProgramsService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }, { type: src_app_services_competition_competition_service__WEBPACK_IMPORTED_MODULE_7__["CompetitionService"] }]; }, null); })();
+    }], function () { return [{ type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Title"] }, { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] }, { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClient"] }, { type: src_app_services_programs_service__WEBPACK_IMPORTED_MODULE_5__["ProgramsService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }, { type: src_app_services_competition_competition_service__WEBPACK_IMPORTED_MODULE_7__["CompetitionService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }]; }, null); })();
 
 
 /***/ }),

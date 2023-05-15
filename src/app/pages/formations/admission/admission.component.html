@@ -78,7 +78,7 @@
 
                     {{ 'admission.re-entry'|translate }}<span class="star_required">*</span>
                     <p>
-                        <select formControlName="concours" id="monselect">
+                        <select formControlName="concours" id="monselect" [(ngModel)]="selectedCompetition">
                             <option value="{{competitions?.name}}">{{ competitions?.name }} </option>
                         </select>
                     </p>
