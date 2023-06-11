@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, AfterViewInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
@@ -16,6 +16,8 @@ import { Competition } from 'src/app/models/competition';
   styleUrls: ['./admission.component.scss']
 })
 export class AdmissionComponent implements OnInit {
+
+  isLoadingForm: boolean = true;
 
   competitions: Competition;
   competitionSuscription: Subscription | undefined
@@ -61,6 +63,8 @@ export class AdmissionComponent implements OnInit {
     this.storeCompetition()
 
     this.addAdmissionForm();
+    console.log(this.isLoadingForm)
+
 
     this.loadScript('../assets/js/jquery.js');
 
@@ -71,6 +75,13 @@ export class AdmissionComponent implements OnInit {
     this.loadScript('../assets/js/form.js');
 
     this.loadScript('https://code.iconify.design/1/1.0.7/iconify.min.js');
+  }
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.isLoadingForm = false;
+      console.log(this.isLoadingForm)
+    }, 2000);
   }
 
   public loadScript(url: string) {
@@ -132,6 +143,7 @@ export class AdmissionComponent implements OnInit {
       center: ['Yaoundé - Mballa 2', Validators.required],
       cF: ['', Validators.required],
     });
+
   }
 
   submitAdmission() {

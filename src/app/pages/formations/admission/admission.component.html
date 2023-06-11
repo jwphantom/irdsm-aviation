@@ -63,107 +63,100 @@
             </div>
         </section>
 
-        <div id="form" class="container">
-            <form id="regForm" [formGroup]="admissionForm" (ngSubmit)="submitAdmission()" method="post" action=""
-                autocomplete="off">
+        <div *ngIf="isLoadingForm" class="loadingForm">
+            <img src="assets/images/animations/Rolling-1s-200px.svg" alt="">
+        </div>
+
+        <div *ngIf="!isLoadingForm" id="form" class="container">
+            <form [formGroup]="admissionForm" (ngSubmit)="submitAdmission()" method="post" autocomplete="off">
                 <!-- One "tab" for each step in the form: -->
-                <div class="tab">
 
-                    {{ 'admission.select_prog'|translate }}<span class="star_required">*</span>
-                    <p>
-                        <select formControlName="program" id="monselect">
-                            <option *ngFor="let p of programs" value="{{p.name}}">{{ p.name }} </option>
-                        </select>
-                    </p>
-
-                    {{ 'admission.re-entry'|translate }}<span class="star_required">*</span>
-                    <p>
-                        <select formControlName="concours" id="monselect" [(ngModel)]="selectedCompetition">
-                            <option value="{{competitions?.name}}">{{ competitions?.name }} </option>
-                        </select>
-                    </p>
+                <h4>Programme </h4>
 
 
-                </div>
-                <div class="tab">
-                    <h4>{{ 'admission.personal_info'|translate }} </h4>
-                    {{ 'admission.fullname'|translate }}<span class="star_required">*</span>
-                    <p><input formControlName="fname" placeholder="{{ 'admission.fullname'|translate }}"
-                            oninput="this.className = ''" name="name"></p>
+                {{ 'admission.select_prog'|translate }}<span class="star_required">*</span>
+                <p>
+                    <select required formControlName="program" id="monselect">
+                        <option *ngFor="let p of programs" value="{{p.name}}">{{ p.name }} </option>
+                    </select>
+                </p>
 
-                    {{ 'admission.email'|translate }}<span class="star_required">*</span>
-                    <p><input formControlName="email" placeholder="{{ 'admission.email'|translate }}:"
-                            oninput="this.className = ''" name="email"></p>
-
-                    {{ 'admission.phone'|translate }}<span class="star_required">*</span>
-                    <p><input formControlName="phone" placeholder="{{ 'admission.phone'|translate }}"
-                            oninput="this.className = ''" name="phone"></p>
-
-                    {{ 'admission.sexe'|translate }}<span class="star_required">*</span>
-                    <p>
-                        <select formControlName="sexe" id="monselect">
-                            <option value="M">Masculin </option>
-                            <option value="F">Féminin </option>
-                        </select>
-                    </p>
-
-                    {{ 'admission.age'|translate }}<span class="star_required">*</span>
-                    <p><input formControlName="age" placeholder="{{ 'admission.age'|translate }}"
-                            oninput="this.className = ''" type="number" name="age"></p>
-
-                    {{ 'admission.ville'|translate }}<span class="star_required">*</span>
-                    <p><input formControlName="ville" placeholder="{{ 'admission.ville'|translate }}"
-                            oninput="this.className = ''" name="ville"></p>
-                </div>
-
-                <div class="tab">
-
-                    <h4>{{ 'admission.etude'|translate }}</h4>
-
-                    {{ 'admission.diplome'|translate }}<span class="star_required">*</span>
-                    <p>
-                        <select formControlName="diplome" id="monselect">
-                            <option *ngFor="let n of nEtude" value="{{n.name}}">{{ n.name }} </option>
-                        </select>
-                    </p>
-
-                </div>
-                <div class="tab">
-                    <h4> {{ 'admission.choice_center'|translate }} </h4>
-
-                    {{ 'admission.center'|translate }}<span class="star_required">*</span>
-                    <p>
-                        <select formControlName="center" id="monselect">
-                            <option value="Yaoundé - Mballa 2">Yaoundé - Mballa 2 </option>
-                            <option value="Douala - Immeuble Dekage">Douala - Immeuble Dekage
-
-                            </option>
-                            <option value="Yaoundé - Mballa 2">Bafoussam - Institut Supérieur Tankou. </option>
-
-                        </select>
-                    </p>
-
-                    <p class="confirmationForm">
-                        <input oninput="this.className = ''" required formControlName="cF" type="checkbox" id="cF"
-                            name="cF" value="true">
-                        &nbsp;<label (click)="clickConfirmationForm()" for="vehicle1"> {{
-                            'admission.confirm_admission'|translate }}</label><br>
-                    </p>
+                {{ 'admission.re-entry'|translate }}<span class="star_required">*</span>
+                <p>
+                    <select required formControlName="concours" id="monselect" [(ngModel)]="selectedCompetition">
+                        <option value="{{competitions?.name}}">{{ competitions?.name }} </option>
+                    </select>
+                </p>
 
 
-                </div>
-                <div style="overflow:auto;">
-                    <div style="float:right;">
-                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">{{ 'admission.prev'|translate
-                            }}</button>
-                        &nbsp;
-                        <button type="button" id="nextBtn" onclick="nextPrev(1)">{{ 'admission.next'|translate
-                            }}</button>
-                        <button [disabled]="admissionForm.invalid" id="submit" type="submit" style="display: none;"> {{
-                            'admission.submit'|translate }}</button>
 
-                    </div>
-                </div>
+                <h4>{{ 'admission.personal_info'|translate }} </h4>
+                {{ 'admission.fullname'|translate }}<span class="star_required">*</span>
+                <p><input required formControlName="fname" placeholder="{{ 'admission.fullname'|translate }}"
+                        name="name"></p>
+
+                {{ 'admission.email'|translate }}<span class="star_required">*</span>
+                <p><input required formControlName="email" placeholder="{{ 'admission.email'|translate }}:"
+                        name="email"></p>
+
+                {{ 'admission.phone'|translate }}<span class="star_required">*</span>
+                <p><input required formControlName="phone" placeholder="{{ 'admission.phone'|translate }}" name="phone">
+                </p>
+
+                {{ 'admission.sexe'|translate }}<span class="star_required">*</span>
+                <p>
+                    <select required formControlName="sexe" id="monselect">
+                        <option value="M">Masculin </option>
+                        <option value="F">Féminin </option>
+                    </select>
+                </p>
+
+                {{ 'admission.age'|translate }}<span class="star_required">*</span>
+                <p><input required formControlName="age" placeholder="{{ 'admission.age'|translate }}" type="number"
+                        name="age"></p>
+
+                {{ 'admission.ville'|translate }}<span class="star_required">*</span>
+                <p><input required formControlName="ville" placeholder="{{ 'admission.ville'|translate }}" name="ville">
+                </p>
+
+
+                <h4>{{ 'admission.etude'|translate }}</h4>
+
+                {{ 'admission.diplome'|translate }}<span class="star_required">*</span>
+                <p>
+                    <select required formControlName="diplome" id="monselect">
+                        <option *ngFor="let n of nEtude" value="{{n.name}}">{{ n.name }} </option>
+                    </select>
+                </p>
+
+
+                <h4> {{ 'admission.choice_center'|translate }} </h4>
+
+                {{ 'admission.center'|translate }}<span class="star_required">*</span>
+                <p>
+                    <select required formControlName="center" id="monselect">
+                        <option value="Yaoundé - Mballa 2">Yaoundé - Mballa 2 </option>
+                        <option value="Douala - Immeuble Dekage">Douala - Immeuble Dekage
+
+                        </option>
+                        <option value="Yaoundé - Mballa 2">Bafoussam - Institut Supérieur Tankou. </option>
+
+                    </select>
+                </p>
+
+                <p class="confirmationForm">
+                    <input required oninput="this.className = ''" required formControlName="cF" type="checkbox" id="cF"
+                        name="cF" value="true">
+                    &nbsp;<label (click)="clickConfirmationForm()" for="vehicle1"> {{
+                        'admission.confirm_admission'|translate }}</label><br>
+                </p>
+
+
+
+                <button [disabled]="admissionForm.invalid" type="submit"> {{
+                    'admission.submit'|translate }}</button>
+
+
                 <!-- Circles which indicates the steps of the form: -->
                 <div style="text-align:center;margin-top:40px;">
                     <span class="step"></span>
