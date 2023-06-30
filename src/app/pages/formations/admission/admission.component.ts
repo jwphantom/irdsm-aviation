@@ -60,7 +60,7 @@ export class AdmissionComponent implements OnInit {
 
     this.storeNEtude();
 
-    this.storeCompetition()
+    //this.storeCompetition()
 
     this.addAdmissionForm();
     console.log(this.isLoadingForm)
@@ -123,6 +123,7 @@ export class AdmissionComponent implements OnInit {
 
   storeDateCompetition() {
     this.dateComp = this.programService.dateComp;
+    this.selectedCompetition = this.dateComp[0].name
   }
 
   storeNEtude() {
@@ -132,7 +133,7 @@ export class AdmissionComponent implements OnInit {
   addAdmissionForm() {
     this.admissionForm = this.formBuilder.group({
       program: ['Licence de pilote de ligne', Validators.required],
-      concours: ["", Validators.required],
+      concours: ["Concours du 05 Août 2023", Validators.required],
       fname: ['', Validators.required],
       email: ['', Validators.required],
       phone: ['', Validators.required],
