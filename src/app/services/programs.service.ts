@@ -17,26 +17,30 @@ export class ProgramsService {
   programs = [
     {
       name: "Licence de pilote de ligne",
-      duration: "03"
-    },
-    {
-      name: "Pilote hélicoptère",
-      duration: "03"
+      duration: "32"
     },
     {
       name: "Hôtesse de l’air / stewards",
-      duration: "004"
+      duration: "12"
     },
     {
       name: "Douane Import / Export",
-      duration: "004"
+      duration: "06"
+    },
+    {
+      name: "Informatique des systemes de contrôle",
+      duration: "12"
     },
     {
       name: "Agent Technique d’Exploitation",
+      duration: "12"
+    },
+    {
+      name: "Investissement et developpement",
       duration: "004"
     },
     {
-      name: "Agent de services commerciaux",
+      name: "sécrétaires et cadres administratifs",
       duration: "004"
     },
     {
@@ -109,6 +113,14 @@ export class ProgramsService {
     },
     {
       name: "Supervision/ Contrôle",
+      duration: "004"
+    },
+    {
+      name: "Tourisme et loisirs",
+      duration: "004"
+    },
+    {
+      name: "Logistique et transport",
       duration: "004"
     }
   ];
