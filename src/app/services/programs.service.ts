@@ -131,10 +131,6 @@ export class ProgramsService {
     {
       code: "050823",
       name: "Concours du 05 Août 2023",
-    },
-    {
-      code: "120823",
-      name: "Concours du 12 Août 2023",
     }
   ];
 
@@ -143,10 +139,6 @@ export class ProgramsService {
     {
       code: "050823",
       name: "Concours du 05 Août 2023",
-    },
-    {
-      code: "120823",
-      name: "Concours du 12 Août 2023",
     }
   ];
 
