@@ -1364,7 +1364,7 @@ class AdmissionComponent {
     }
     addAdmissionForm() {
         this.admissionForm = this.formBuilder.group({
-            program: ['Licence de pilote de ligne', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            program: ['Hôtesse de l’air / stewards', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             concours: ["Concours du 05 Août 2023", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             fname: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
