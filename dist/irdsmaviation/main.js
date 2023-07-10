@@ -4838,11 +4838,11 @@ class ProgramsService {
         this.nEtudeSubject = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
         this.programs = [
             {
-                name: "Licence de pilote de ligne",
-                duration: "32"
+                name: "Hôtesse de l’air / stewards",
+                duration: "12"
             },
             {
-                name: "Hôtesse de l’air / stewards",
+                name: "Agent Technique d’Exploitation",
                 duration: "12"
             },
             {
@@ -4854,16 +4854,15 @@ class ProgramsService {
                 duration: "12"
             },
             {
-                name: "Agent Technique d’Exploitation",
-                duration: "12"
-            },
-            {
                 name: "Investissement et developpement",
                 duration: "004"
             },
             {
                 name: "sécrétaires et cadres administratifs",
                 duration: "004"
+            }, {
+                name: "Licence de pilote de ligne",
+                duration: "32"
             },
             {
                 name: "Agent de passage escale aéroportuaire",
