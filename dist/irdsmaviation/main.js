@@ -4947,8 +4947,8 @@ class ProgramsService {
         ];
         this.dateComp = [
             {
-                code: "050823",
-                name: "Concours du 05 Août 2023",
+                code: "230923",
+                name: "Concours du 23 Septembre 2023",
             }
         ];
         this.listConcours = [

@@ -128,8 +128,8 @@ export class ProgramsService {
 
   dateComp = [
     {
-      code: "050823",
-      name: "Concours du 05 Août 2023",
+      code: "230923",
+      name: "Concours du 23 Septembre 2023",
     }
   ];
 
