@@ -13,8 +13,8 @@ export class ServicesComponent implements OnInit {
     private title: Title
   ) { }
 
-  ngOnInit(){   
-    
+  ngOnInit() {
+
     this.title.setTitle("Afrizon - Services");
 
     this.loadScript('../assets/js/jquery.js');
@@ -24,7 +24,7 @@ export class ServicesComponent implements OnInit {
   }
 
   public loadScript(url: string) {
-    const body = <HTMLDivElement> document.body;
+    const body = <HTMLDivElement>document.body;
     const script = document.createElement('script');
     script.innerHTML = '';
     script.src = url;
