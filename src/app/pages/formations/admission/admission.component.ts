@@ -8,6 +8,7 @@ import { ProgramsService } from 'src/app/services/programs.service';
 import { GlobalConstants } from '../../../common/global-constants';
 import { CompetitionService } from 'src/app/services/competition/competition.service';
 import { Competition } from 'src/app/models/competition';
+import { PixelService } from 'ngx-multi-pixel';
 
 
 @Component({
@@ -47,7 +48,8 @@ export class AdmissionComponent implements OnInit {
     private programService: ProgramsService,
     private router: Router,
     public competitionService: CompetitionService,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private pixel: PixelService
   ) { }
 
   ngOnInit() {
@@ -64,6 +66,8 @@ export class AdmissionComponent implements OnInit {
 
     this.addAdmissionForm();
     console.log(this.isLoadingForm)
+
+    this.pixel.track('PageView');
 
 
     this.loadScript('../assets/js/jquery.js');
@@ -197,6 +201,9 @@ export class AdmissionComponent implements OnInit {
         this.cdr.detectChanges();
       }
     );
+  }
+  onConsent(): void {
+    this.pixel.initialize();
   }
 
 }

@@ -34,6 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PolytechniqueComponent } from './pages/polytechnique/polytechnique.component';
 import { AdmissionPolytechniqueComponent } from './pages/polytechnique/admission-polytechnique/admission-polytechnique.component';
 import { FormationPolytechniqueComponent } from './pages/polytechnique/formation-polytechnique/formation-polytechnique.component';
+import { PixelModule } from "ngx-multi-pixel";
 
 
 @NgModule({
@@ -69,6 +70,7 @@ import { FormationPolytechniqueComponent } from './pages/polytechnique/formation
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    PixelModule.forRoot({ enabled: true, pixelId: ["290325576943462"] }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
