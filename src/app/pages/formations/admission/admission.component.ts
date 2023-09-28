@@ -137,7 +137,7 @@ export class AdmissionComponent implements OnInit {
   addAdmissionForm() {
     this.admissionForm = this.formBuilder.group({
       program: ['Hôtesse de l’air / stewards', Validators.required],
-      concours: ["Concours du 23 Septembre 2023", Validators.required],
+      concours: ["Concours du 11 Novembre 2023", Validators.required],
       fname: ['', Validators.required],
       email: ['', Validators.required],
       phone: ['', Validators.required],

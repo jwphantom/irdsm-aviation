@@ -129,7 +129,7 @@ export class ProgramsService {
   dateComp = [
     {
       code: "230923",
-      name: "Concours du 23 Septembre 2023",
+      name: "Concours du 11 Novembre 2023",
     }
   ];
 
@@ -137,7 +137,7 @@ export class ProgramsService {
   listConcours = [
     {
       code: "050823",
-      name: "Concours du 05 Août 2023",
+      name: "Concours du 11 Novembre 2023",
     }
   ];
 
