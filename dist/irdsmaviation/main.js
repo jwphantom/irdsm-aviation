@@ -4962,14 +4962,14 @@ class ProgramsService {
         ];
         this.dateComp = [
             {
-                code: "230923",
-                name: "Concours du 11 Novembre 2023",
+                code: "240224",
+                name: "Concours du 24 Février 2024",
             }
         ];
         this.listConcours = [
             {
-                code: "050823",
-                name: "Concours du 11 Novembre 2023",
+                code: "240224",
+                name: "Concours du 24 Février 2024",
             }
         ];
         this.nEtdute = [
