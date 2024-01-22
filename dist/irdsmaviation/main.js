@@ -1176,7 +1176,7 @@ function AdmissionComponent_div_25_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](107, "Yaound\u00E9 - Mballa 2 ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "option", 39);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109, "Bafoussam - Institut Sup\u00E9rieur Tankou. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109, "Douala - Feu Rouge Bessengue. ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
