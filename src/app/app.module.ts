@@ -29,7 +29,6 @@ import { PiloteComponent } from './pages/pilote/pilote.component';
 import { AdmissionComponent } from './pages/formations/admission/admission.component';
 import { PageTitleComponent } from './static/page-title/page-title.component';
 import { MaterialExampleModule } from 'material.module';
-import { MatNativeDateModule } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PolytechniqueComponent } from './pages/polytechnique/polytechnique.component';
 import { AdmissionPolytechniqueComponent } from './pages/polytechnique/admission-polytechnique/admission-polytechnique.component';
@@ -63,8 +62,6 @@ import { PixelModule } from "ngx-multi-pixel";
   ],
   imports: [
     BrowserModule,
-    MatNativeDateModule,
-    MaterialExampleModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
