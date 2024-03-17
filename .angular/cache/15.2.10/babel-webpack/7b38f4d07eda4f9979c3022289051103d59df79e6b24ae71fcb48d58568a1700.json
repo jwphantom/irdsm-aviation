@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class LocaleService {\n  constructor() {\n    this.lang = navigator.language.substr(0, 2);\n  }\n  switchFr() {\n    this.lang = \"fr\";\n    console.log('fr');\n  }\n  switchEn() {\n    this.lang = \"en\";\n    console.log('en');\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
